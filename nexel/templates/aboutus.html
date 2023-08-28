@@ -1,0 +1,283 @@
+{% extends 'main_light/base.html' %}
+{% load static %}
+
+
+{% block head %}
+
+	<title>NEXEL's Journey: From Startup to Industry Leader in Web Development and Digital Marketing</title>
+    <meta name="description" content="Discover the talented individuals that power Nexel's success. Meet our dedicated team of software developers, designers, and digital strategists who work collaboratively to bring your ideas to life. Learn about their expertise and commitment to delivering innovative solutions.">
+    <meta name="keywords" content="Software Development, Web Development, Android App Development, SEO Services, Digital Marketing, Branding Solutions, Mangalore Karnataka, India">
+    <meta name="location" content="Mangalore, Karnataka, India">
+    <meta name="author" content="Nexel-Futureize the Innovation">
+
+	<!-- Social Media Meta Tags -->
+	<meta property="og:title" content="Nexel: Innovative Software Development Company">
+	<meta property="og:description" content="Leading software development company in Mangalore, Karnataka, offering web development, Android apps, SEO, digital marketing, and branding solutions.">
+	<meta property="og:image" content="{{ads.image.url}}"> <!-- Add URL to your company logo or relevant image -->
+	<meta property="og:url" content="https://www.nexel.in/">
+	<meta name="twitter:card" content="summary_large_image">
+
+	<!--Twitter-card-->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Nexel - Futureize the innovation">
+	<meta name="twitter:description" content="Leading software development company in Mangalore, Karnataka, offering web development, Android apps, SEO, digital marketing, and branding solutions.">
+	<meta name="twitter:image" content="{{ads.image.url}}">
+	
+	<!-- Schema Markup for Local Business -->
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "LocalBusiness",
+			"name": "Nexel",
+			"description": "Leading software development company in Mangalore, Karnataka, specializing in web development, Android app development, SEO, digital marketing, and branding.",
+			"url": "https://www.nexel.in",
+			"logo": "{% static 'images/favicon.png' %}",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Mangalore",
+				"addressRegion": "Karnataka",
+				"postalCode": "570001",
+				"addressCountry": "India"
+			},
+			"contactPoint": {
+				"@type": "ContactPoint",
+				"telephone": "+91-9778165158",
+				"contactType": "customer service"
+			}
+		}
+	</script>
+
+{% endblock head %}
+
+
+
+
+{% block body %}
+
+	<!--page head-->
+	<section class="page-heading-sec about-pag-head pt85 pb120">
+		<div class="container">
+			<div class="row pt80">
+				<div class="col-lg-6">
+					<div class="page-heading mr25">
+						<span class="sub-heading mb15" data-aos="fade-up" data-aos-delay="200"><i class="fas fa-building mr5"></i> Who We Are</span>
+						<h1 data-aos="fade-up" data-aos-delay="400"> Discover <span class="ree-text rt45">Nexel:</span> Empowering Innovation Through Technology</h1>
+						<p class="mt30 h-light" data-aos="fade-up" data-aos-delay="600">At Nexel, we are more than just a software company; we are a passionate team dedicated to empowering innovation through cutting-edge technology solutions. With a strong foothold in Mangalore, India, we believe in pushing boundaries, fostering collaboration, and embracing transparency. </p>
+						<p class="mt15 h-light" data-aos="fade-up" data-aos-delay="800">Our commitment to excellence drives us to deliver beyond expectations, ensuring every project we undertake reflects our core values of integrity, innovation, and client-centricity. Join us on our journey to reshape the tech landscape, nurture talent, and create a brighter technological future for all.</p>
+					</div>
+				</div>
+
+				<div class="col-lg-6">
+					<div class="sol-img m-mt30">
+						<img src="{% static 'images\nexel_images\banner\nexel_about.png' %}" alt="Nexel office" class="img-fluid" data-aos="fade-in" data-aos-delay="400">
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	<!--page head end-->
+
+	<!--about company-->
+	<section class="r-bg-c sec-pad">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="page-headings side-pghd">
+						<span class="sub-heading mb15">About Nexel?</span>
+						<h2>The Nexel</h2>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<h4 class="mb15">Nexel is a full-service web, app and digital marketing company based in India.</h4>
+					<p>At NEXEL, located in Mangalore, Karnataka, we specialize in Futureize the Innovation and providing cutting-edge technology solutions for businesses and organizations. Our services include web and android development, digital marketing, promotional videos, CRM products and even a digital learning platform for university students named NexLearn.
+                        <br>
+                        Our team of tech experts and entrepreneurs understand the importance of staying ahead of the curve in today's digital age. That's why we strive to provide the latest and greatest technology solutions to help our clients succeed.</p>
+					<p class="mt15">To learn more about our approach to business and work, feel free to hop on over to	our Open Contact Page.</p>
+
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--about company end-->
+
+
+	<!--mission and vision-->
+	<section class="r-bg-a  sec-pad">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-sm-12">
+					<!-- Tabs nav -->
+					<ul class="vrt-tabb nav nav-pills nav-pills-custom" id="pills-tab" role="tablist"
+						aria-orientation="vertical">
+						<li>
+							<a class="nav-link active" id="mission-tab" data-toggle="pill" href="#pills-mission"
+								role="tab" aria-controls="pills-mission" aria-selected="true">
+								<i class="fas fa-rocket"></i> Our Mission</a>
+						</li>
+						<li> <a class="nav-link" id="vision-tab" data-toggle="pill" href="#pills-vision" role="tab"
+								aria-controls="pills-vision" aria-selected="false">
+								<i class="far fa-eye"></i> Our Vision</a>
+						</li>
+						<li> <a class="nav-link" id="comit-tab" data-toggle="pill" href="#pills-comit" role="tab"
+								aria-controls="pills-comit" aria-selected="false">
+								<i class="fas fa-hands-helping"></i> Our Commitment</a>
+						</li>
+						<li> <a class="nav-link" id="value-tab" data-toggle="pill" href="#pills-value" role="tab"
+								aria-controls="pills-value" aria-selected="false">
+								<i class="fas fa-hand-peace"></i> Core Values</a>
+						</li>
+						<li> <a class="nav-link" id="community-tab" data-toggle="pill" href="#pills-community" role="tab"
+								aria-controls="pills-community" aria-selected="false">
+								<i class="fas fa-users"></i> Developer Community</a>
+						</li>
+						<li> <a class="nav-link" id="intern-tab" data-toggle="pill" href="#pills-intern" role="tab"
+								aria-controls="pills-intern" aria-selected="false">
+								<i class="fas fa-briefcase"></i> Internship  </a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-8 col-sm-12">
+					<!-- Tabs content -->
+					<div class="tab-content tab-bg" id="pills-tabContent">
+						<div class="tab-pane fade  show active" id="pills-mission" role="tabpanel"	aria-labelledby="mission-tab">	<h3 class="mb15">Our Mission</h3>
+							<p>At Nexel, our mission is to empower innovation through cutting-edge software solutions. We're committed to transforming complex ideas into user-friendly technologies that enhance lives and businesses. By fostering a dynamic environment that thrives on creativity and collaboration, we aim to be a driving force in advancing technology in Mangalore, India, and beyond. Our mission is to make technology accessible and beneficial for everyone, creating a positive impact on society.</p>
+							<p class="mt15">"Innovating the future, one code at a time. Nexel's mission is to turn intricate concepts into tools that empower lives and elevate businesses. Through boundless creativity and united teamwork, we pave the way for technological progress in Mangalore, India, and the world. Our goal is to ensure technology's embrace reaches far and wide, crafting a better tomorrow for all."</p>
+						</div>
+						<div class="tab-pane fade" id="pills-vision" role="tabpanel" aria-labelledby="vision-tab">	<h3 class="mb15">Our Vision</h3>
+							<p>Our vision at Nexel is to be a trailblazer in the software industry, known for our innovative spirit and impactful contributions. We envision a future where our software solutions not only streamline processes but also inspire growth and progress. By nurturing a culture of continuous learning and adaptability, we aspire to lead the way in technological advancements. Through our commitment to excellence and community building, we aim to be a beacon of technological innovation rooted in Mangalore, India.</p>
+							<p class="mt15">"Empowering the future through innovation, Nexel envisions a world where software not only solves challenges but catalyzes growth. With a culture of perpetual learning and adaptability, we illuminate the path of technological progress. Rooted in Mangalore, we strive to be the guiding light of transformative innovation in the software realm."</p>
+						</div>
+						<div class="tab-pane fade" id="pills-comit" role="tabpanel" aria-labelledby="comit-tab">	<h3 class="mb15">Our Commitment</h3>
+							<p>We are committed to delivering software solutions that not only meet but exceed expectations. Our commitment extends to fostering an inclusive and collaborative work environment where every individual's ideas and contributions are valued. As a responsible corporate citizen, we pledge to prioritize ethical practices, environmental sustainability, and social responsibility. We are dedicated to investing in the growth of our employees, nurturing local talent, and contributing to the betterment of our community.</p>
+							<p class="mt15">"At Nexel, we don't just create software; we craft solutions that transcend expectations. Our commitment reaches beyond coding, into the very fabric of our culture—an environment that embraces diversity, values every voice, and thrives on collaboration. As conscientious stewards of our corporate role, we elevate ethics, sustainability, and societal well-being. Guided by our dedication, we cultivate our team, empower local talents, and enrich the community we call home."</p>
+						</div>
+						<div class="tab-pane fade" id="pills-value" role="tabpanel" aria-labelledby="comit-value">	<h3 class="mb15">Our Commitment</h3>
+							<p>At Nexel, our core values define who we are and guide everything we do. Integrity is the foundation of our actions; we believe in honesty, transparency, and ethical conduct. Innovation drives us to continuously explore new horizons and pioneer novel solutions. Collaboration is at the heart of our success, as we believe that diverse perspectives lead to stronger outcomes. </p>
+							<p class="mt15">We are customer-centric, committed to delivering solutions that genuinely address our clients' needs. Lastly, our dedication to growth extends beyond our company to the larger community through knowledge sharing, education, and empowering the next generation of tech enthusiasts.
+                            </p>
+						</div>
+						<div class="tab-pane fade" id="pills-community" role="tabpanel" aria-labelledby="community-tab">	<h3 class="mb15">Developer Communtiy</h3>
+							<p>At Nexel, we pride ourselves on being more than just a company; we are a vibrant developer community. Our belief in the power of shared ideas, knowledge, and expertise drives us to collectively enhance the technology landscape. Within our developer community, we provide an inclusive platform for enthusiasts to immerse themselves in learning, forge meaningful connections, and cultivate personal and professional growth. Through collaborative projects, workshops, and open discussions, we foster an environment where innovation thrives, and creativity knows no bounds. </p>
+							<p class="mt15"> Our commitment to this community echoes our larger vision of making technology accessible and beneficial to all, fostering a culture of continuous learning and technological advancement.</p>
+							<a href="https://chat.whatsapp.com/Dv8NZ6Gjvn4BO4dJEa1fn2" class="ree-btn  ree-btn-grdt1 mt40 mw-80">Join Developer Community <i	class="fas fa-arrow-right fa-btn"></i></a>
+                            
+                        </div>
+						<div class="tab-pane fade" id="pills-intern" role="tabpanel" aria-labelledby="intern-tab">	<h3 class="mb15">Internship</h3>
+							<p>Nexel is dedicated to fostering growth not only within our organization but also within the larger talent pool. We understand the importance of bridging the gap between classroom learning and real-world application. That's why we extend our commitment to education by offering internships tailored for college students and individuals eager to explore the world of technology.</p>
+							<p class="mt15">Our internships provide hands-on experience, guided mentorship, and exposure to real industry challenges. Through this immersive journey, interns gain valuable insights, develop practical skills, and become better equipped for their future careers. By investing in internships, we contribute to the development of skilled professionals, enriching the tech ecosystem in Mangalore and leaving an enduring impact on the broader technological landscape.</p>
+							<a href="{% url 'allinternships' %}" class="ree-btn  ree-btn-grdt1 mt40 mw-80">Find Internship <i	class="fas fa-arrow-right fa-btn"></i></a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--mission and vision end-->
+
+	<!--company keypoints-->
+	<section class="r-bg-x  sec-pad">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-7 text-center">
+					<div class="page-headings">
+						<h2>Transparency and Ethics</h2>
+						<p class="mt15">Nexel prioritizes transparency and ethics. With open communication and unwavering integrity, we build trust, nurture relationships, and drive sustainable growth in the software industry.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row mt30">
+				<div class="col-lg-4 col-sm-6">
+					<div class="ree-card r-bg-c mt60">
+						<div class="ree-card-img"><img src="{% static 'images/nexel_images/icons/target.svg' %}" alt="services"> </div>
+						<div class="ree-card-content mt40">
+							<h3 class="mb15">Client-centric Approach</h3>
+							<p>At Nexel, clients are at the heart of everything we do. We tailor our solutions to your needs, ensuring your success is our top priority.</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="ree-card r-bg-c mt60">
+						<div class="ree-card-img"><img src="{% static 'images/nexel_images/icons/fast-time.svg' %}" alt="services"> </div>
+						<div class="ree-card-content mt40">
+							<h3 class="mb15">Service Delivered in Time</h3>
+							<p>Time matters, and at Nexel, we understand that. We're dedicated to delivering services punctually, without compromising on quality.</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="ree-card r-bg-c mt60">
+						<div class="ree-card-img"><img src="{% static 'images/nexel_images/icons/united.svg' %}" alt="services"> </div>
+						<div class="ree-card-content mt40">
+							<h3 class="mb15">Effective Collaboration</h3>
+							<p>Collaboration fuels innovation. We work closely with you to achieve shared goals, fostering a productive and dynamic partnership.</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="ree-card r-bg-c mt60">
+						<div class="ree-card-img"><img src="{% static 'images/nexel_images/icons/team.svg' %}" alt="services"> </div>
+						<div class="ree-card-content mt40">
+							<h3 class="mb15">Employee Benefits</h3>
+							<p>Our employees are our strength. We offer comprehensive benefits, creating a supportive environment where growth and well-being thrive.</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="ree-card r-bg-c mt60">
+						<div class="ree-card-img"><img src="{% static 'images/nexel_images/icons/partnership.svg' %}" alt="services"> </div>
+						<div class="ree-card-content mt40">
+							<h3 class="mb15">Team Work</h3>
+							<p>Together, we shine brighter. Nexel values teamwork, leveraging diverse talents to achieve remarkable outcomes that make a difference.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="ree-card r-bg-c mt60">
+						<div class="ree-card-img"><img src="{% static 'images/nexel_images/icons/qualitys.svg' %}" alt="services"> </div>
+						<div class="ree-card-content mt40">
+							<h3 class="mb15">Quality of Service</h3>
+							<p>Excellence is our standard. Nexel is committed to providing top-notch services that meet the highest standards of quality and reliability.</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!--company keypoints end-->
+
+	<!--start career cta-->
+	<section class="r-bg-a  sec-pad">
+		<div class="container">
+			<div class="ree">
+				<div class="row">
+					<div class="col-lg-6 vcenter">
+						<div class="cta-heading">
+							<span class="sub-heading mb15">Career</span>
+							<h2><span class="ree-text rt40">Teamwork</span> is the ability to work together toward a common vision.</h2>
+
+							<a href="{% url 'contactus' %}" class="ree-btn  ree-btn-grdt1 mt40 mw-80">Join Our Team <i	class="fas fa-arrow-right fa-btn"></i></a>
+						</div>
+					</div>
+					<div class="col-lg-6 vcenter">
+						<div class="ct-sol-img">
+							<img src="{% static 'images\nexel_images\icons\team-support.svg' %}" alt="team" class="img-fluid">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--end career cta-->
+
+
+
+{% endblock %}

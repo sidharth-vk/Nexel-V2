@@ -1,0 +1,244 @@
+{% extends 'main_light/base.html' %}
+{% load static %}
+{% block body %}
+{% for career in career %}
+ <!-- Header title -->
+ <section class="header-title head-opacity" data-background="images/banner/office.jpg">
+	<div class="container">
+	   <div class="row">
+		  <div class="col-lg-6">
+			 <h1 class="mb15">{{career.name}}</h1>
+			 <p class="h-light">{{career.des}}</p>
+		
+		  <div class="case-study-about mt30">
+
+			  <div class="csa-block">
+				  <h6>Location</h6>
+				  <p>{{career.location}}</p>
+			  </div>
+
+			  <div class="csa-block">
+				  <h6>Job Type</h6>
+				  <p>{{career.jobtype}}</p>
+			  </div>
+		  </div>
+		  <div class="btn-sets2 vcenter  " data-aos="fade-in" data-aos-delay="1100"> <a href="{{career.form}}" class="ree-btn  ree-btn-grdt1 no-shadows mw-80 mr20 mt20">Apply Now <i class="fas fa-arrow-right fa-btn"></i></a> </div>
+
+	   </div>
+	</div>
+</div>
+ </section>
+ <!-- Header title end -->
+
+ <section class="sec-pad r-bg-a">	
+	<div class="container">
+		<div class="row">		
+			<div class="col-lg-8">
+				<div class="pera-block ml25">					
+					<h2>Key Responsibilities :</h2>
+					<br>
+				{{career.responsibilities|safe}}
+				</div>
+			</div>
+			<div class="col-lg-4 m-mt30">
+					<h3>Requirements :</h3>
+					<br>
+					<ul class="list-check list-icon mt30">
+						<li>{{career.req1}}</li>
+						<li>{{career.req2}}</li>
+						<li>{{career.req3}}</li>
+					</ul>
+			</div>		
+		</div>	
+	</div>	
+</section>
+
+
+
+<!--project description-->
+<section class="sec-pad r-bg-x">	
+	<div class="container">
+		<div class="row">		
+			<div class="col-lg-8">
+				<div class="pera-block ml25">					
+					<h2>About Nexel</h2>
+					<p>At NEXEL, located in Mangalore, Karnataka, we specialize in Futureize Innovation
+                        and providing cutting-edge technology solutions for businesses and organizations.
+                        Our services include web and android development, digital marketing, promotional
+                        videos, CRM products</p>
+					<p>Our team of tech experts and entrepreneurs understands the importance of staying
+                        ahead of the curve in today's digital age. That's why we strive to provide the latest
+                        and greatest technology solutions to help our clients succeed.</p>								
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="sol-img m-mt30">
+					<img src="{{career.img.url}}" alt="img" class="img-fluid">
+				</div>
+			</div>		
+		</div>
+	</div>	
+</section>		
+<!--project description end-->
+
+      <!--career benefits-->
+      <section class="r-bg-a sec-pad">
+		<div class="container">
+		   <div class="row justify-content-center">
+			  <div class="col-lg-12 text-center">
+				 <div class="page-headings">
+					<h2 class="mb15">We are hiring <span class="ree-text rt40">heroes!</span> Time to value your skills.</h2>
+					<p class="mt15">Calling All Heroes! Unleash Your Skills with Us. Join our team and let your talents shine. We're hiring and ready to welcome the next wave of heroes. Step up to the challenge and embrace a rewarding journey!</p>
+				 </div>
+			  </div>
+		   </div>
+		   <div class="row justify-content-center mt30">
+			  <div class="col-lg-3 col-md-6 col-sm-6 mt30">
+				 <div class="process-content ree-card">
+					<div class="process-block">
+					   <div class="process-icon">
+						  <img src="{% static 'images/nexel_images/icons/peace-of-mind.svg' %}" alt="service" class="icon70 mb15">
+					   </div>
+					   <h4>Career Opportunities</h4>
+					   <p>Explore exciting roles that allow you to utilize and enhance your skills. </p>
+					</div>
+				 </div>
+			  </div>
+			  <div class="col-lg-3 col-md-6 col-sm-6 mt30">
+				 <div class="process-content ree-card">
+					<div class="process-block">
+					   <div class="process-icon">
+						  <img src="{% static 'images/nexel_images/icons/job-interview.svg' %}" alt="service" class="icon70 mb15">
+					   </div>
+					   <h4>Skill Empowerment</h4>
+					   <p>Unleash your unique talents and contribute to groundbreaking projects.</p>
+					</div>
+				 </div>
+			  </div>
+			  <div class="col-lg-3 col-md-6 col-sm-6 mt30">
+				 <div class="process-content ree-card">
+					<div class="process-block">
+					   <div class="process-icon">
+						  <img src="{% static 'images/nexel_images/icons/presentation.svg' %}" alt="service" class="icon70 mb15">
+					   </div>
+					   <h4>Join Our Team</h4>
+					   <p>Become a part of a dynamic and driven team committed to excellence.</p>
+					</div>
+				 </div>
+			  </div>
+			  <div class="col-lg-3 col-md-6 col-sm-6 mt30">
+				 <div class="process-content ree-card">
+					<div class="process-block">
+					   <div class="process-icon">
+						  <img src="{% static 'images/nexel_images/icons/sunglasses.svg' %}" alt="service" class="icon70 mb15">
+					   </div>
+					   <h4>Talent Showcasing</h4>
+					   <p>Showcase your skills on projects that truly matter and make an impact.</p>
+					</div>
+				 </div>
+			  </div>
+			  <div class="col-lg-3 col-md-6 col-sm-6 mt30">
+				 <div class="process-content ree-card">
+					<div class="process-block">
+					   <div class="process-icon">
+						  <img src="{% static 'images/nexel_images/icons/paid-content.svg' %}" alt="service" class="icon70 mb15">
+					   </div>
+					   <h4>Next-Level Challenges</h4>
+					   <p>Embrace challenges that push your boundaries and encourage growth.</p>
+					</div>
+				 </div>
+			  </div>
+			  <div class="col-lg-3 col-md-6 col-sm-6 mt30">
+				 <div class="process-content ree-card">
+					<div class="process-block">
+					   <div class="process-icon">
+						  <img src="{% static 'images/nexel_images/icons/office-table.svg' %}" alt="service" class="icon70 mb15">
+					   </div>
+					   <h4>Rewarding Journey</h4>
+					   <p>Embark on a journey filled with achievements, growth, and recognition.</p>
+					</div>
+				 </div>
+			  </div>
+			  <div class="col-lg-3 col-md-6 col-sm-6 mt30">
+				 <div class="process-content ree-card">
+					<div class="process-block">
+					   <div class="process-icon">
+						  <img src="{% static 'images/nexel_images/icons/group.svg' %}" alt="service" class="icon70 mb15">
+					   </div>
+					   <h4>Heroic Collaboration</h4>
+					   <p>Collaborate with like-minded professionals to create something extraordinary.</p>
+					</div>
+				 </div>
+			  </div>
+			  <div class="col-lg-3 col-md-6 col-sm-6 mt30">
+				 <div class="process-content ree-card">
+					<div class="process-block">
+					   <div class="process-icon">
+						  <img src="{% static 'images/nexel_images/icons/consulting.svg' %}" alt="service" class="icon70 mb15">
+					   </div>
+					   <h4>Ready to Welcome</h4>
+					   <p>Join a welcoming community ready to support and empower your success.</p>
+					</div>
+				 </div>
+			  </div>
+		   </div>
+		</div>
+	 </section>
+	 <!--career benefits end-->
+
+
+	 <!--Interview Process-->
+	 <section class="r-bg-d sec-pad">
+		<div class="container">
+		   <div class="row justify-content-center">
+			  <div class="col-lg-12 text-center">
+				 <div class="page-headings">
+					<h2 class="mb15">Process of <span class="ree-text rt40">Interview</span></h2>
+					<p class="mt15">Our interview process is like having a friendly chat about your skills and dreams. We'll also dive into some tasks to see you in action. It's all about helping you shine and finding the perfect fit. Join us for a stress-free conversation that opens doors to exciting opportunities!</p>
+				 </div>
+			  </div>
+		   </div>
+		   <div class="row justify-content-center mt30">
+			  <div class="col-lg-3 col-md-6 col-sm-6 mt30">
+				 <div class="process-content ree-card">
+					<div class="process-block">
+					   <div class="process-icon">
+						  <img src="{% static 'images/nexel_images/icons/interview.svg' %}" alt="service" class="icon70 mb15">
+					   </div>
+					   <h4>HR Interview</h4>
+					   <p>Discover who you are beyond your resume, and let your personality shine. </p>
+					</div>
+				 </div>
+			  </div>
+			  <div class="col-lg-3 col-md-6 col-sm-6 mt30">
+				 <div class="process-content ree-card">
+					<div class="process-block">
+					   <div class="process-icon">
+						  <img src="{% static 'images/nexel_images/icons/job-interview.svg' %}" alt="service" class="icon70 mb15">
+					   </div>
+					   <h4>Personal Interview</h4>
+					   <p>A conversation tailored to you, where your aspirations and strengths take center stage. </p>
+					</div>
+				 </div>
+			  </div>
+			  <div class="col-lg-3 col-md-6 col-sm-6 mt30">
+				 <div class="process-content ree-card">
+					<div class="process-block">
+					   <div class="process-icon">
+						  <img src="{% static 'images/nexel_images//icons/browsing.svg' %}" alt="service" class="icon70 mb15">
+					   </div>
+					   <h4>Practical Round</h4>
+					   <p>Roll up your sleeves and showcase your skills in action, making your expertise clear.</p>
+					</div>
+				 </div>
+			  </div>
+		   </div>
+		</div>
+	 </section>
+	 <!---Interview Process end-->
+
+
+
+{% endfor %}
+
+{% endblock %}

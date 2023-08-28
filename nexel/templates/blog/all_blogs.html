@@ -1,0 +1,114 @@
+{% extends 'main_light/base.html' %}
+{% load static %}
+
+{% block head %}
+
+	<title>Latest Insights on Web & Android Development, Digital Marketing, and More - NEXEL Blog </title>
+    <meta name="description" content="Stay up-to-date with the latest news and insights from NEXEL, a tech startup based in Mangalore. We provide web & android development services, digital marketing, promo videos, and a digital learning platform for university students. We also offer a University CRM solution named NEXEL CampusConnect">
+    <meta name="keywords" content="Software Development, Web Development, Android App Development, SEO Services, Digital Marketing, Branding Solutions, Mangalore Karnataka, India, Nexel-Blogs">
+    <meta name="location" content="Mangalore, Karnataka, India">
+    <meta name="author" content="Nexel-Futureize the Innovation">
+
+	<!-- Social Media Meta Tags -->
+	<meta property="og:title" content="Nexel: Innovative Software Development Company">
+	<meta property="og:description" content="Leading software development company in Mangalore, Karnataka, offering web development, Android apps, SEO, digital marketing, and branding solutions.">
+	<meta property="og:image" content="{{ads.image.url}}"> <!-- Add URL to your company logo or relevant image -->
+	<meta property="og:url" content="https://www.nexel.in/">
+	<meta name="twitter:card" content="summary_large_image">
+
+	<!--Twitter-card-->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Nexel - Futureize the innovation">
+	<meta name="twitter:description" content="Leading software development company in Mangalore, Karnataka, offering web development, Android apps, SEO, digital marketing, and branding solutions.">
+	<meta name="twitter:image" content="{{ads.image.url}}">
+	
+	<!-- Schema Markup for Local Business -->
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "LocalBusiness",
+			"name": "Nexel",
+			"description": "Leading software development company in Mangalore, Karnataka, specializing in web development, Android app development, SEO, digital marketing, and branding.",
+			"url": "https://www.nexel.in",
+			"logo": "{% static 'images/favicon.png' %}",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Mangalore",
+				"addressRegion": "Karnataka",
+				"postalCode": "570001",
+				"addressCountry": "India"
+			},
+			"contactPoint": {
+				"@type": "ContactPoint",
+				"telephone": "+91-9778165158",
+				"contactType": "customer service"
+			}
+		}
+	</script>
+
+{% endblock head %}
+
+
+
+
+{% block body %}
+
+	<!--blog-->
+	<div class="r-bg-a pt85 pb120">		
+		<div class="container">
+			<div class="row pt80">
+				<div class="col-lg-5">
+					<div class="page-headings">
+						<span class="sub-heading mb15"><i class="fas fa-book mr5"></i> Blogs & News</span>
+						<h1 class="mb15">Our <span class="ree-text rt40">Blog</span></h1>
+						<p>What would you love to learn how to do?</p>
+					</div>
+				</div>
+				<div class="col-lg-7">
+					<div class="ree-subs-from">
+						<h4>Subscribe to get the latest insights in your inbox.</h4>
+						<form class="mt20">
+							<input type="text" name="subs" id="subs-email" placeholder="Your email please"
+								class="subs-input">
+							<button class="ree-btn-grdt1 subs-btn"><i class="fas fa-arrow-right"></i></button>
+						</form>
+
+
+					</div>
+				</div>
+			</div>
+			</div>
+			</div>
+
+	<div class="blog-block sec-pad pt80">		
+				<div class="container">
+			<div class="blog-post">
+				<div class="row">
+
+
+                    {% for blog in blog %}
+
+					<div class="col-lg-4 col-sm-6">
+						<div class="ree-media-crd">
+							<div class="rpl-img"><a href="{% url 'blogdetails' blog.slug %}"><img src="{{blog.image1.url}}"
+										alt="blog" class="fill-fixed"> </a> </div>
+							<div class="rpl-contt">
+								<div class="blog-quick-inf mb20 mt30"><span><i class="far fa-calendar-alt"></i> {{blog.date}}</span> <span><i class="fas fa-user"></i>   {{blog.author}}</span> </div>
+								<h4><a href="{% url 'blogdetails' blog.slug %}">{{blog.title}}</a>
+								</h4>
+							</div>
+						</div>
+					</div>
+
+                    {% endfor %}
+
+				
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--blog end-->
+
+
+{% endblock %}

@@ -1,0 +1,362 @@
+{% extends 'main_dark/base.html' %}
+{% load static %}
+{% block body %}
+
+
+
+      <!--start Hero Section  -->
+      <section class="home-creative-agency hero-sec dark-bg" data-background="{% static "images\nexel_images\banner\banner home 1.png" %}">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6 vcenter">
+                  <div class="hero-content-a zup">
+                     <h1 class="h1 mb30" data-aos="fade-in" data-aos-delay="200">Turning Visions into Digital Reality</h1>
+                     <p data-aos="fade-in" data-aos-delay="500">Welcome to NEXEL - Where technology and innovation meet excellence. Innovating Futures, One Line of Code at a Time</p>
+                     <div class="btn-sets2 vcenter  mt20" data-aos="fade-in" data-aos-delay="1100"> <a href="{% url 'service_page' %}" class="ree-btn  ree-btn-grdt1 no-shadows mw-80 mr20 mt20">All Services<i class="fas fa-arrow-right fa-btn"></i></a> </div>
+                  </div>
+               </div>
+               <div class="col-lg-6 vcenter"> </div>
+            </div>
+         </div>
+      </section>
+      <!--hero Section End-->
+      <!--creative service  -->
+      <div class="creative-service dark-deep">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12">  
+                  <div class="ree-ca-service owl-carousel">
+
+                  <div class="ree-full-bg-card img-hover">
+                     <a href="{% url 'web_development' %}" class="full-card-link bd-rds">
+                        <div class="img-full-bgimg"><img src="{% static 'images\nexel_images\services\web_development.png' %}" alt="img" class="img-hor"></div>
+                        <div class="full-card--title dark-bg sevctxt">
+                           <span class="sub-heading2 mb15">Development</span>
+                           <h3>Web Design & Development</h3>						 
+                        </div>
+                     </a>
+                     <div class="bottom-tags"><a href="#">HTML</a>|<a href="#">DJANGO</a>|<a href="#">.NET</a>|<a href="#">WORDPRESS</a></div>
+                  </div>
+              
+                  <div class="ree-full-bg-card img-hover">
+                     <a href="{% url 'app_development' %}" class="full-card-link bd-rds">
+						<div class="img-full-bgimg"><img src="{% static 'images\nexel_images\services\app_development.png' %}" alt="img" class="img-hor"></div>
+                        <div class="full-card--title dark-bg sevctxt">
+                           <span class="sub-heading2 mb15">Development</span>
+                           <h3>Android App Design & Development</h3>
+                        </div>
+                     </a>
+                     <div class="bottom-tags"><a href="#">ANDROID</a>|<a href="#">FLUTTER</a>|<a href="#">REACTNATIVE</a></div>
+                  </div>
+              
+                  <div class="ree-full-bg-card img-hover">
+                     <a href="{% url 'marketing' %}" class="full-card-link bd-rds">
+						<div class="img-full-bgimg"><img src="{% static 'images\nexel_images\services\marketing.png' %}" alt="img" class="img-hor"></div>
+                        <div class="full-card--title dark-bg sevctxt">
+                           <span class="sub-heading2 mb15">Marketing</span>
+                           <h3>Marketing Campaigns & Content Creation</h3>
+                        </div>
+                     </a>
+                     <div class="bottom-tags"><a href="#">SEO</a>|<a href="#">SMO</a>|<a href="#">PPC</a>|<a href="#">EMAIL</a>|<a href="#">CONTENT</a></div>
+                  </div>
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <!--creative service end-->
+
+            <!--start home-about  -->
+            <section class="home-about sec-pad dark-bg">
+                <div class="container">
+                   <div class="row justify-content-center">
+                      <div class="col-lg-10">
+                         <div class="about-content-home m-mb60 text-center">
+                            <span class="sub-heading mb15">We Are N E X E L</span>
+                            <h2 class="mb15"><span class="ree-text rt40">Award</span> Winning Creative Agency.</h2>
+                            <h4 class="mb15">Welcome to NEXEL - Where technology and innovation meet excellence</h4>
+                            <p>Nexel started its operation in the year 2021. We are Worldwide, based Web, App and Digital Marketing Company. Our main Domain is Web Design, App Development, Digital Marketing, Product Design and Cloud Services. Customer Satisfaction and the Highest rate of Customer Repeatability make us one of the pioneers in the field. So, what are you waiting for? Let us discuss your ideas and our innovation in detail because catering your requirement and converting it into a final product is our main goal. </p>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="agency-info-ree mt100">
+                   <div class="agency-picture"><img src="{% for ads_front in ads_front %}{{ads_front.img.url}}{% endfor %}" alt="img" class="img-fluid"></div>
+                   <div class="container">
+                      <div class="row key-and-award">
+                         <div class="ree-app-st-a flx-end m-order2">
+                            <div class="btnctm"> <a href="{% url 'aboutus' %}" class="ree-btn ree-btn-grdt3 mw-80 m-mt30">Know More Nexel <i class="fas fa-arrow-right fa-btn"></i></a> </div>
+                         </div>
+                         {% comment %} <div class="ree-app-st-b m-order1">
+                            <div class="quick-key-points dark-light-a">
+                               <div class="key-highlights">
+                                  <div class="key-highlt-b">
+                                     <h3><span>7500</span> <span>+</span></h3>
+                                     <p>Project Delivered</p>
+                                  </div>
+                                  <div class="key-highlt-b">
+                                     <h3><span>3500 </span> <span>+</span></h3>
+                                     <p>Enterprise Clients</p>
+                                  </div>
+                                  <div class="key-highlt-b">
+                                     <h3><span>540 </span> <span>+</span></h3>
+                                     <p>Experts Team</p>
+                                  </div>
+                                  <div class="key-highlt-b">
+                                     <h3><span>20 </span> <span>%</span></h3>
+                                     <p>Success Years</p>
+                                  </div>
+                               </div>
+                               <div class="agency-info-anim text-center">
+                                  <div class="animated-logo"> <img src="{% static 'images\nexel_images\nexel_logo.png' %}" alt="Nexel logo" class="logo-anim"> <img src="{% static 'images\nexel_images\tech_logo\app-development.webp' %}" alt="Nexel logo" class="circle-anim"> </div>
+                               </div>
+                            </div>
+                         </div> {% endcomment %}
+                      </div>
+                   </div>
+                </div>
+                
+             </section>
+             <!--home-about end-->
+
+   
+
+    <!--start technologies-->
+    <section class="dark-deep dark-bg sec-pad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="sec-heading text-center">
+                    <h2><span class="ree-text rt40">Technologies</span> we work with</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt30">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div class="icon-with-title">
+                    <a href="javascript:void(0)">
+                        <div class="iwt-icon"> <img src="{% static 'images\nexel_images\tech_logo\apple.svg' %}" alt="Android"> </div>
+                        <div class="iwt-content">
+                            <p>iOS</p>
+                        </div>
+                    </a>
+                </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="icon-with-title">
+                    <a href="javascript:void(0)">
+                        <div class="iwt-icon"> <img src="{% static 'images\nexel_images\tech_logo\android.svg' %}" alt="Android"> </div>
+                        <div class="iwt-content">
+                            <p>Android</p>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div class="icon-with-title">
+                    <a href="javascript:void(0)">
+                        <div class="iwt-icon"> <img src="{% static 'images\nexel_images\tech_logo\flutterio-icon.svg' %}" alt="Flutter"> </div>
+                        <div class="iwt-content">
+                            <p>Flutter</p>
+                        </div>
+                    </a>
+                </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div class="icon-with-title">
+                    <a href="javascript:void(0)">
+                        <div class="iwt-icon"> <img src="{% static 'images\nexel_images\tech_logo\django.png' %}" alt="Apple"> </div>
+                        <div class="iwt-content">
+                            <p>DJANGO</p>
+                        </div>
+                    </a>
+                </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div class="icon-with-title">
+                    <a href="javascript:void(0)">
+                        <div class="iwt-icon"> <img src="{% static 'images\nexel_images\tech_logo\physics.svg' %}" alt="React Native"> </div>
+                        <div class="iwt-content">
+                            <p>React Native</p>
+                        </div>
+                    </a>
+                </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div class="icon-with-title">
+                    <a href="javascript:void(0)">
+                        <div class="iwt-icon"> <img src="{% static 'images\nexel_images\tech_logo\WordPress_blue_logo.png' %}" alt="Java"> </div>
+                        <div class="iwt-content">
+                            <p>WordPress</p>
+                        </div>
+                    </a>
+                </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div class="icon-with-title">
+                    <a href="javascript:void(0)">
+                        <div class="iwt-icon"> <img src="{% static 'images\nexel_images\tech_logo\php.png' %}" alt="Apswiftple"> </div>
+                        <div class="iwt-content">
+                            <p>PHP</p>
+                        </div>
+                    </a>
+                </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="icon-with-title">
+                    <a href="javascript:void(0)">
+                        <div class="iwt-icon"> <img src="{% static 'images\nexel_images\tech_logo\java.svg' %}" alt="Java"> </div>
+                        <div class="iwt-content">
+                            <p>Java</p>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="icon-with-title">
+                    <a href="javascript:void(0)">
+                        <div class="iwt-icon"> <img src="{% static 'images\nexel_images\tech_logo\python.png' %}" alt="python"> </div>
+                        <div class="iwt-content">
+                            <p>Python</p>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="icon-with-title">
+                    <a href="javascript:void(0)">
+                        <div class="iwt-icon"> <img src="{% static 'images\nexel_images\tech_logo\figma.png' %}" alt="pwa"> </div>
+                        <div class="iwt-content">
+                            <p>Figma</p>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end technologies-->
+
+
+
+      <!--start blogs  -->
+      <section class="sec-pad">
+        <div class="container">
+           <div class="row">
+              <div class="col-lg-12">
+                 <div class="sec-heading text-center">
+                    <span class="sub-heading mb15">Latest from blog</span>
+                    <h2 class="mb15"><span	class="ree-text rt40">Read</span> stories, tips, and our opinions on everything</h2>
+                    <p>Get updated with the latest trends in technology and know how your business can benefit from these technologies.</p>
+                 </div>
+              </div>
+           </div>
+           <div class="row mt30">
+              {% for blog in blog %}
+              <div class="col-lg-4 mt30" data-aos="fade-up" data-aos-delay="800">
+                 <div class="half-blog-card">
+                    <div class="half-blog-img">
+                       <a href="{% url 'blogdetails' blog.slug %}"><img src="{{blog.image1.url}}" hstyle="height:440px; width:280px;" alt="blogs" class="img-fluid"> </a>
+                    </div>
+                    <div class="half-blog-content">
+                       <div class="blog-quick-inf mb20"><span><i class="far fa-calendar-alt"></i>   {{blog.date}}</span> <span><i class="fas fa-user"></i>    {{blog.author}}</span> </div>
+                       <h4 class="mb15"><a href="{% url 'blogdetails' blog.slug %}">{{blog.title|slice:50}}...</a></h4>
+                       <p>{{blog.quote|slice:70}}..</p>
+                    </div>
+                 </div>
+              </div>
+              {% endfor %}
+           </div>
+        </div>
+     </section>
+     <!--end blogs-->
+
+
+     <!--start contact block-->
+     <section class="sec-pad dark-light-a pb120">
+        <div class="container">
+           <div class="row zup">
+              <div class="col-right-a">
+                 <div class="sec-heading">
+                    <span class="sub-heading mb15">Inquiry</span>
+                    <h2>Let’s Get in <span class="ree-text rt40">Touch</span></h2>
+                 </div>
+                 <div class="home-contact-blocks mt60">
+                    <div class="contact-infos">
+                       <div class="c-infot"> <span>Sales Department</span> <a href="tel:+917829843942"><i class="fas fa-phone-alt"></i> +91 7829843942</a> </div>
+                       <div class="c-infot"> <span>HR Department</span> <a href="tel:+919778165158"><i class="fas fa-phone-alt"></i> +91 9778165158</a> </div>
+                    </div>
+                    <div class="contact-infos mt35">
+                       <div class="c-infot"> <span>Sales Department</span> <a href="mailto:nexel.cd@gmail.com"><i class="fas fa-envelope"></i> nexel.cd@gmail.com</a> </div>
+                       <div class="c-infot"> <span>Connect on LinkedIn</span> <a href="https://www.linkedin.com/company/nexel-futureize-the-innovation/"><i class="fab fa-linkedin"></i> Nexel Futureize the Innovation</a> </div>
+                    </div>
+                    <div class="our-map mt40">
+                       <p class="mb5">Our Location</p>
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3708.5992285173434!2d74.78992727303687!3d13.022097992481301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba353f6d76ebcf5%3A0xe0e05a7f8f1c6c9b!2sNexel%20-%20Futureize%20the%20Innovation!5e0!3m2!1sen!2sin!4v1692697264732!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                 </div>
+              </div>
+              <div class="col-right-b">
+                 <div class="form-contact-hom">
+                    <div class="form-blocks">
+                       <form method="post" name="feedback-form">
+                        {% csrf_token %}
+                          <h3>Share your idea or <br>requirement with our experts</h3>
+                          <div class="fieldsets row mt40">
+                             <div class="col-md-6">
+                                <input type="text" placeholder="Full Name" name="name" class="input-ree" required> 
+                             </div>
+                             <div class="col-md-6">
+                                <input type="email" required placeholder="Email Address" name="email" class="input-ree">
+                             </div>
+                          </div>
+                          <div class="fieldsets row">
+                             <div class="col-md-6">
+                                <input type="tel" required placeholder="Contact Number" name="phone" class="input-ree">
+                             </div>
+                             <div class="col-md-6">
+                              <select class="input-ree" required name="interest">
+                                 <option value="Web Design">Web Design</option>
+                                 <option value="Graphic Design">Graphic Design</option>
+                                 <option value="App Development">App Development</option>
+                                 <option value="E-commerce Development">E-commerce Development</option>
+                                 <option value="Digital Marketing">Digital Marketing</option>
+                                 <option value="Business Growth">Business Growth</option>
+                                 <option value="Business Startup">Business Startup</option>
+                                 <option value="Other">Other...</option>
+                              </select>
+                           </div>
+                          </div>
+                          <div class="fieldsets row">
+                             <div class="col-md-12">
+                                <input type="text" required placeholder="Subject" name="subject" class="input-ree"> 
+                             </div>
+                             
+                          </div>
+                          <div class="fieldsets">
+                             <textarea placeholder="Message" required name="message" class="input-ree"></textarea>
+                          </div>
+                          <div class="custom-control custom-checkbox">
+                             <input type="checkbox" required class="custom-control-input" id="customCheck" name="example1" checked="checked">
+                             <label class="custom-control-label label-f-form" for="customCheck">I agree to the <a href="javascript:void(0)">Terms &amp; Conditions</a> of Nexel.</label>
+                          </div>
+                          <div class="fieldsets mt20">
+                             <button type="submit" name="submit" class="ree-btn  ree-btn-grdt1 no-shadows">Send your inquiry <i class="fas fa-arrow-right fa-btn"></i></button>
+                          </div>
+                       </form>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+     <!--end contact block-->
+
+
+
+
+{% endblock body %}

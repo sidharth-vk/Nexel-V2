@@ -1,0 +1,157 @@
+{% extends 'main_light/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>Internships | Join Nexel for Real-World Experience</title>
+<!-- Meta Description -->
+<meta name="description" content="Explore exciting software engineering internships at Nexel. Gain practical experience, mentorship, and hands-on learning in a dynamic tech environment. Apply now for a rewarding internship opportunity!">
+<!-- Meta Keywords (Note: Meta keywords are not as relevant for SEO as they used to be) -->
+<meta name="keywords" content="Software engineering internships, tech internship program, internship opportunities, coding internships, software development experience, Nexel, technology careers, hands-on learning">
+
+
+{% endblock head %}
+
+
+
+{% block body %}
+
+<!--page head-->
+<div class="port-head-sec pt85 pb120 r-bg-x">
+   <div class="container">
+      <div class="row vcenter pt80">
+         <div class="col-lg-6">
+            <div class="page-headings">
+               <span class="sub-heading mb15" data-aos="fade-up" data-aos-delay="200"><i class="fas fa-users mr5"></i> Ignite Your Potential: </span>
+               <h1 class="mb15" data-aos="fade-up" data-aos-delay="400">Explore Our Internship Opportunities</h1>
+               <p class="h-light" data-aos="fade-up" data-aos-delay="600">Discover hands-on learning and professional growth through our dynamic internship programs. Join us to gain real-world experience, mentorship, and a pathway to shaping your future in the ever-evolving world of AI. Explore our diverse range of internship opportunities and embark on a journey to unleash your potential.</p>
+               <a href="#job" class="port-links mt40" data-aos="fade-up" data-aos-delay="800">Find Internship<i class="fas fa-arrow-right fa-btn"></i></a>						
+            </div>
+         </div>
+         <div class="col-lg-6">
+            <div class="sol-img m-mt30" data-aos="fade-in" data-aos-delay="400"><img src="{{ads.image.url}}" alt="our-staff" class="img-fluid"></div>
+         </div>
+      </div>
+   </div>
+</div>
+  <!--page head end-->
+
+       <!--job opeaning-->
+       <section class="home-partners-block r-bg-a sec-pad" id="job">
+        <div class="container">
+           <div class="row justify-content-center">
+              <div class="col-lg-8">
+                 <div class="sec-heading text-center">
+                    <h2 class="mb15">Nexel<span class="ree-text rt40"> Internships</span></h2>
+                    <p>Join Our Internship Adventure: Discover Your Potential with Us!</p>
+                 </div>
+              </div>
+           </div>
+           <div class="row justify-content-center mt30">
+
+
+            {% for internship in internship %}
+              <div class="col-lg-4 mt30">
+                 <div class="job-detail ree-card">
+                    <h4>{{internship.name}}</h4>
+                    <div class="job-info w-100 mt30">
+                       <div class="career-detail">
+                          <p>Required Experience</p>
+                          <p>Fresher</p>
+                       </div>
+                       <div class="career-detail">
+                          <p>Number of Position</p>
+                          <p>{{internship.nop}}</p>
+                       </div>
+                       <div class="career-detail">
+                          <p>Job Location</p>
+                          <p>{{internship.location}}</p>
+                       </div>
+                       <div class="career-detail">
+                          <p>Job Type</p>
+                          <p>Internship</p>
+                       </div>
+                    </div>
+                    <div class="job-titl mt40">
+                       <p></p>
+                       <a href="{% url 'internships_details' internship.slug %}" class="ree-btn  ree-btn-grdt2">Apply Now <i class="fas fa-arrow-right fa-btn"></i></a>
+                    </div>
+                 </div>
+              </div>
+              {% endfor %}
+              
+           </div>
+        </div>
+     </section>
+     <!--job opeaning end-->
+
+     
+      <!--start cta-->
+      <section class="sec-pad r-bg-x">
+         <div class="container">
+            <div class="ree">
+               <div class="row">
+                  <div class="col-lg-6 vcenter">
+                     <div class="cta-heading">
+                        <span class="sub-heading mb15">Nexel Internship</span>
+                        <h2>Showcase Your <span class="ree-text rt40">Internship Project:</span> Upload and Share Your Accomplishments</h2>
+                        <a href="{% url 'contactus' %}" class="ree-btn  ree-btn-grdt1  mt40 mr20"><i class="fas fa-phone-alt fb-bigon"></i> Contact </a>
+                        <a href="{% url 'internship_upload' %}" class="ree-btn  whatsapp-bg mt40" target="_blank"><i class="fa fa-upload fb-bigon"></i> Upload </a>
+   
+                     </div>
+                  </div>
+                  <div class="col-lg-6 vcenter text-center">
+                     <div class="sol-img-png">
+                        <img src="{% static 'images\nexel_images\icons\Student-Internship.jpg' %}" alt="working with client" style="border-radius: 20px;" class="img-fluid">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+  <!--end cta-->
+     
+
+         <!--start work-->
+    <section class="r-bg-a sec-pad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-sm-8 vcenter">
+            <div class="heading-hz-btn">
+              <h2>Learn From <span class="ree-text rt40">Nexel - Developer </span> Community</h2>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-4 vcenter">
+            <div class="link-sol-header">
+              <a href="https://www.youtube.com/@nexelin" target="_blank" class="ree-card-link">View All <i class="fas fa-arrow-right fa-btn"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row mt60">
+          <div class="col-lg-12">
+            <div class="full-work-block  owl-carousel">
+              {% for youtubevideo in youtubevideo %}
+              <div class="fwb-main-x fwb-a">
+                <div class="work-thumbnails">
+                  <iframe 
+                     src="https://www.youtube.com/embed/{{youtubevideo.youtube_id}}?modestbranding=1&;showinfo=0&;autohide=1&;rel=0;" frameborder="0" allowfullscreen style="border-radius:10px; width:100%; height:300px;">
+                     </iframe>
+                     
+                </div>
+                <div class="work-details">
+                  <p class="mb10">{{youtubevideo.category}}</p>
+                  <h4><a href="https://www.youtube.com/live/{{youtubevideo.youtube_id}}?feature=share" target="_blank">{{youtubevideo.name}}</a> </h4>
+                </div>
+              </div>
+              {% endfor %}       
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end work-->
+
+
+       
+
+
+{% endblock %}

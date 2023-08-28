@@ -1,0 +1,111 @@
+{% extends 'main_light/base.html' %}
+{% load static %}
+
+
+{% block body %}
+
+<!-- Header title -->
+<section class="header-title head-opacity" data-background="images/banner/office.jpg">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7 text-center">
+                <h1 class="mb15">Why Choose Us</h1>
+                <p class="h-light">Your Success, Our Expertise: The Clear Choice</p>
+            </div>			
+        </div>
+    </div>
+</section>
+<!-- Header title end -->
+
+<!--page head-->
+<section class="page-heading-sec about-pag-head sec-pad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="page-heading mr25">
+                    <span class="sub-heading mb15" data-aos="fade-up" data-aos-delay="200">Why Us</span>
+                    <h2 data-aos="fade-up" data-aos-delay="400"> We are a <span class="ree-text rt45">Innovative Software Development Company</span> with a Global Presence.</h2>
+                    <p class="mt30" data-aos="fade-up" data-aos-delay="600">We are a team of top talent delivering enterprise solutions globally. we evolve with the advancement in technology because we believe in making our technology as your innovation.</p>
+                    <p class="mt15" data-aos="fade-up" data-aos-delay="800">Our experts provide a wide range of services including app design, web development, digital marketing, ecommerce solutions and cloud development. We stay updated with the technology to build innovative digital products that meet client requirements across multiple business verticals and domains by housing some of the best professionals in the industry.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="sol-img m-mt30">
+                    <img src="{% static 'images/nexel_images/banner/nexel_about.png' %}" alt="Nexel office" class="img-fluid" data-aos="fade-in" data-aos-delay="400">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<!--page head end-->
+
+
+
+<!--start company info-->
+<section class="r-bg-a sec-pad">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-4">
+          <div class="sol-img m-mt30">
+            <img src="{{ads.image.url}}" alt="Nexel office" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="pera-block ml50">
+            <h2> Our <span class="ree-tt">Expertise. </span></h2>
+            <p>Welcome to our expertise hub! We're a leading software development company that offers a wide range of services, from creating awesome websites and boosting online visibility, to making user-friendly apps and spreading the word about businesses.</p>
+            <p>We're also pros at giving brands a fresh look and making them popular. Join us to explore the world of web development, getting found easily on the web, building cool apps, and making your brand shine – all with a touch of Indian digital flair!</p>
+          </div>
+        </div>
+      </div>
+      <div class="row mt30">
+        <div class="col-lg-4 mt30">
+          <div class="pera-block ml50">
+            <h4>Customer Satisfaction.</h4>
+            <p>At the heart of our ethos lies your satisfaction. We believe in crafting digital solutions that not only meet your expectations but exceed them. Our dedicated team listens attentively to your needs, ensuring every pixel and line of code resonates with your vision. Your feedback is our compass, guiding us to refine our work until it aligns perfectly with your aspirations. With us, your journey isn't just a project – it's a partnership focused on delivering smiles and success.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 mt30">
+          <div class="pera-block ml50">
+            <h4> Marketing Strategies</h4>
+            <p>Navigating the digital landscape requires more than just visibility – it demands strategic brilliance. Our marketing wizards specialize in conjuring campaigns that make your brand stand out amidst the digital noise. We blend creativity with data-driven insights to curate campaigns that capture attention, evoke emotions, and drive action. From social media sorcery to search engine mastery, we've got your back in the dynamic world of online marketing.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 mt30">
+          <div class="pera-block ml50">
+            <h4>After-Sales Service.</h4>
+            <p>Our commitment to you doesn't end with project completion; it's just the beginning of a lasting relationship. Our after-sales service is a testament to our dedication to your success. Whether you encounter a technical glitch or seek guidance, our support team is always just a click away. We pride ourselves on quick response times, expert troubleshooting, and a relentless focus on ensuring your continued satisfaction. With us, you're not just a client – you're a valued partner on a journey of excellence.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end company info-->
+
+
+<!--start career cta-->
+<section class="r-bg-a  sec-pad">
+    <div class="container">
+        <div class="ree">
+            <div class="row">
+                <div class="col-lg-6 vcenter">
+                    <div class="cta-heading">
+                        <span class="sub-heading mb15">Career</span>
+                        <h2><span class="ree-text rt40">Teamwork</span> is the ability to work together toward a common vision.</h2>
+
+                        <a href="{% url 'contactus' %}" class="ree-btn  ree-btn-grdt1 mt40 mw-80">Join Our Team <i	class="fas fa-arrow-right fa-btn"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 vcenter">
+                    <div class="ct-sol-img">
+                        <img src="{% static 'images/nexel_images/icons/team-support.svg' %}" alt="team" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end career cta-->
+{% endblock %}

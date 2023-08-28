@@ -1,0 +1,40 @@
+
+{% extends 'main_light/base.html' %}
+{% load static %}
+{% block body %}
+
+<script>
+    document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+    });
+</script>
+
+{% for certificate  in certificates %}
+	<!--start Hero Section  -->
+	<section class="home-hero lead-gen">		
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 vcenter">
+					<div class="hero-content pera-block">
+						<span class="sub-heading mb15">{{certificate.certificate_for}}</span>
+						<h1 data-aos="fade-in" data-aos-delay="200">Validate Your Achievements: Verify Your Certification</h1>
+						<p data-aos="fade-in" data-aos-delay="500">Name : {{certificate.name}}<br> Email : {{certificate.email}}<br> C.ID : {{certificate.unique_id}}</p>
+						<a href="{{certificate.image.url}}" download class="ree-btn  ree-btn-grdt1 mt40 mw-80" data-aos="fade-in" data-aos-delay="800">Download <i class="fas fa-arrow-right fa-btn"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-7 vcenter">
+					<div class="sol-image m-mt30">
+						<img src="{{certificate.image.url}}" alt="nexel_certificate" class="img-fluid" data-aos="fade-in" data-aos-delay="400">
+					</div>
+				</div>
+			</div>
+		</div>		 
+	</section>
+	<!--hero Section End-->
+
+
+
+    {% endfor %}
+
+
+{% endblock %}

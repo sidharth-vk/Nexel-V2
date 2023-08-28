@@ -1,0 +1,267 @@
+{% extends 'main_light/base.html' %}
+{% load static %}
+{% block body %}
+
+
+	<!--start Hero Section  -->
+	<section class="home-hero lead-gen">		
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 vcenter">
+					<div class="hero-content pera-block">
+						<span class="sub-heading mb15">Boosting Your Online Reach: </span>
+						<h1 data-aos="fade-in" data-aos-delay="200">Expertise in SEO, Marketing, and Social Media</h1>
+						<p data-aos="fade-in" data-aos-delay="500">Expand your digital footprint with our seamless blend of SEO, marketing, and social media expertise. Reach new heights online with our comprehensive approach.</p>
+						<a href="{% url 'contactus' %}" class="ree-btn  ree-btn-grdt1 mt40 mw-80" data-aos="fade-in" data-aos-delay="800">Let's Talk <i class="fas fa-arrow-right fa-btn"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-7 vcenter">
+					<div class="sol-image m-mt30">
+						<img src="{% static 'images\nexel_images\services\marketing.png' %}" alt="web development" class="img-fluid" data-aos="fade-in" data-aos-delay="400">
+					</div>
+				</div>
+			</div>
+		</div>		 
+	</section>
+	<!--hero Section End-->
+
+
+    	<!--start home-about  -->
+	<section class="home-about sec-pad pt50 r-bg-a">
+		<div class="container">
+			<div class="row mt100">
+				<div class="col-lg-6">
+					<div class="about-content-home m-mb60 pera-block">
+						<span class="sub-heading mb15">We Are Nexel</span>
+						<h2><span class="ree-text rt40">Elevate Your Online Visibility: </span> A Trio of SEO, Marketing, and Social Media Excellence</h2>
+						<p> 
+                            Search Engine Optimization (SEO) will drive traffic to your website, increase the number of your visitors and generates more potential customers – but only if you know how to do it right.
+                            
+                            SEM, or search engine marketing, aids in the growth of qualified traffic to your website as well as the value of your brand. Consumers are more likely to visit your website, prefer you, and even promote your offers if your product or service ranks higher in search engines.</p>
+							
+							<p>  
+                                Social networking is an excellent way to communicate directly with your customers. Treat people properly, and your brand’s worth will rise as a result of how you communicate with them. When it comes to Social Media Marketing (SMM), our young and energetic teams of enthusiastic professionals are equipped to offer you nothing but the best.
+                                
+                                Our SMM experts will guide you throughout the entire process, from account creation to set-up and designing the creative materials required to monitoring the daily activity and engagement of your followers.</p>				
+						
+						<div class="btn-sets mt40">
+							<a href="{% url 'aboutus' %}" class="ree-btn  ree-btn-grdt2 mr20">About Us <i	class="fas fa-arrow-right fa-btn"></i></a>
+						</div>
+					</div>
+					</div>
+				
+				<div class="col-lg-6">
+					<div class="form-contact-hom m-mt60">
+						<div class="form-block bg-w">
+							<div class="form-head"><h3>Let’s Scale Your Brand, Together</h3></div>
+							<div class="form-body">
+								<form method="post" name="feedback-form">
+									{% csrf_token %}
+									  <div class="fieldsets row mt40">
+										 <div class="col-md-6">
+											<input type="text" placeholder="Full Name" name="name" class="input-ree" required> 
+										 </div>
+										 <div class="col-md-6">
+											<input type="email" required placeholder="Email Address" name="email" class="input-ree">
+										 </div>
+									  </div>
+									  <div class="fieldsets row">
+										 <div class="col-md-6">
+											<input type="tel" required placeholder="Contact Number" name="phone" class="input-ree">
+										 </div>
+										 <div class="col-md-6">
+										  <select class="input-ree" required name="interest">
+											 <option value="Web Design">Web Design</option>
+											 <option value="Graphic Design">Graphic Design</option>
+											 <option value="App Development">App Development</option>
+											 <option value="E-commerce Development">E-commerce Development</option>
+											 <option value="Digital Marketing">Digital Marketing</option>
+											 <option value="Business Growth">Business Growth</option>
+											 <option value="Business Startup">Business Startup</option>
+											 <option value="Other">Other...</option>
+										  </select>
+									   </div>
+									  </div>
+									  <div class="fieldsets row">
+										 <div class="col-md-12">
+											<input type="text" required placeholder="Subject" name="subject" class="input-ree"> 
+										 </div>
+										 
+									  </div>
+									  <div class="fieldsets">
+										 <textarea placeholder="Message" required name="message" class="input-ree"></textarea>
+									  </div>
+									  <div class="custom-control custom-checkbox">
+										 <input type="checkbox" required class="custom-control-input" id="customCheck" name="example1" checked="checked">
+										 <label class="custom-control-label label-f-form" for="customCheck">I agree to the <a href="javascript:void(0)">Terms &amp; Conditions</a> of Nexel.</label>
+									  </div>
+									  <div class="fieldsets mt20">
+										 <button type="submit" name="submit" class="ree-btn  ree-btn-grdt1 no-shadows">Send your inquiry <i class="fas fa-arrow-right fa-btn"></i></button>
+									  </div>
+								   </form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!--home-about end-->
+
+    	<!--start services-->
+	<section class="r-bg-i sec-pad">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="sec-heading text-center pera-block">
+						<h2>See what we can <span class="ree-text rt40">do</span> for <span class="ree-text rt40">you</span></h2>
+						{% comment %} <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p> {% endcomment %}
+					</div>
+				</div>
+			</div>
+
+			<div class="row mt30">
+				<div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+					<div class="ree-card r-bg-c mt60" style="height: 370px;">
+						<div class="ree-card-img shadows"><img src="{% static 'images\nexel_images\services\seo.png' %}" alt="services"> </div>
+						<div class="ree-card-content mt40">
+							<h3 class="mb15"><a href="#">Search Engine Optimization</a></h3>
+							<p>Boost your website's visibility on search engines like Google to attract organic traffic and improve your online ranking.</p>
+						</div>
+						<div class="ree-card-content-link">
+							<a href="#" class="ree-card-link mt40">Read More <i class="fas fa-arrow-right fa-btn"></i> </a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+					<div class="ree-card r-bg-c  mt60" style="height: 370px;">
+						<div class="ree-card-img"><img src="{% static 'images\nexel_images\services\Pay-Per-Click Advertising.png' %}" alt="services"> </div>
+						<div class="ree-card-content mt40">
+							<h3 class="mb15"><a href="#">Pay-Per-Click Advertising</a></h3>
+							<p>Run targeted ads on platforms like Google Ads and social media to drive instant traffic to your website and pay only for clicks.</p>
+						</div>
+						<div class="ree-card-content-link">
+							<a href="#" class="ree-card-link mt40">Read More <i class="fas fa-arrow-right fa-btn"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="500">
+					<div class="ree-card r-bg-c  mt60" style="height: 370px;">
+						<div class="ree-card-img"><img src="{% static 'images\nexel_images\services\socialmedia.png' %}" alt="services"> </div>
+						<div class="ree-card-content mt40">
+							<h3 class="mb15"><a href="#">Social Media Marketing</a></h3>
+							<p>Leverage platforms like Facebook, Instagram, Twitter, and LinkedIn to engage with your audience, build brand awareness, and drive conversions.</p>
+						</div>
+						<div class="ree-card-content-link">
+							<a href="#" class="ree-card-link mt40">Read More <i class="fas fa-arrow-right fa-btn"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="700">
+					<div class="ree-card r-bg-c  mt60" style="height: 370px;">
+						<div class="ree-card-img"><img src="{% static 'images\nexel_images\services\content.png' %}" alt="services"> </div>
+						<div class="ree-card-content mt40">
+							<h3 class="mb15"><a href="#">Content Marketing</a></h3>
+							<p>Create valuable and relevant content, such as blogs, videos, and infographics, to establish your expertise, engage your audience, and attract leads.</p>
+						</div>
+						<div class="ree-card-content-link">
+							<a href="#" class="ree-card-link mt40">Read More <i class="fas fa-arrow-right fa-btn"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="900">
+					<div class="ree-card r-bg-c  mt60" style="height: 370px;">
+						<div class="ree-card-img"><img src="{% static 'images\nexel_images\services\email.png' %}" alt="services"> </div>
+						<div class="ree-card-content mt40">
+							<h3 class="mb15"><a href="#">Email Marketing</a></h3>
+							<p>Reach your audience directly with personalized email campaigns, sharing promotions, news, and valuable content to nurture leads and retain customers.</p>
+						</div>
+						<div class="ree-card-content-link">
+							<a href="#" class="ree-card-link mt40">Read More <i class="fas fa-arrow-right fa-btn"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="1100">
+					<div class="ree-card r-bg-c  mt60" style="height: 370px;">
+						<div class="ree-card-img"><img src="{% static 'images\nexel_images\services\influencer.png' %}" alt="services"> </div>
+						<div class="ree-card-content mt40">
+							<h3 class="mb15"><a href="#">Influencer Marketing</a></h3>
+							<p>Collaborate with influencers in your industry to tap into their established audiences, gaining credibility and expanding your reach.</p>
+						</div>
+						<div class="ree-card-content-link">
+							<a href="#" class="ree-card-link mt40">Read More <i class="fas fa-arrow-right fa-btn"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			 
+		</div>
+	</section>
+	<!--services end--> 
+
+	<!--start work-->
+	<section class="r-bg-a sec-pad">
+		<div class="container">
+			<div class="row flx-end">
+				<div class="col-lg-12 col-sm-12">
+					<div class="pera-block">
+						<h2>We are very passionate about developing the business of our customers</h2>
+						<p>Nexel build my startup business a great website that really helps current and potential customers get a good feel for my company. Lorem ipsum dolor sit amet.</p>
+					</div>
+				</div>
+
+				 
+				 
+			</div>
+			<div class="row mt60">
+				<div class="col-lg-12">
+					<div class="sol-img">
+						<img src="{% static 'images\nexel_images\banner\teamwork.svg' %}" alt="Nexel" class="img-fluid">											
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--end work-->
+
+          <!--start blogs  -->
+          <section class="half-bg-ree sec-pad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="sec-heading text-center">
+                            <span class="sub-heading mb15">Latest from blog</span>
+                            <h2 class="mb15"><span	class="ree-text rt40">Read</span> stories, tips, and our opinions on everything</h2>
+                            <p>Get updated with the latest trends in technology and know how your business can benefit from	these technologies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt30">
+                {% for blog in blog %}
+                    <div class="col-lg-4 mt30"  data-aos="fade-up" data-aos-delay="200">
+                        <div class="half-blog-card" >
+                            <div class="half-blog-img"> <a href="{% url 'blogdetails' blog.slug %}"><img src="{{blog.image1.url}}" alt="blogs"	class="img-fluid"> </a> </div>
+                            <div class="half-blog-content" style="height:300px;">
+                                <div class="blog-quick-inf mb20"><span><i class="far fa-calendar-alt"></i> {{blog.date}}</span> <span><i class="fas fa-user"></i> {{blog.author}}</span> </div>
+                                <h4 class="mb15"><a href="{% url 'blogdetails' blog.slug %}">{{blog.title}}</a></h4>
+                                <p>{{blog.quote|slice:50}}..</p>							
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+                </div>
+        </section>
+        <!--end blogs-->
+    
+
+
+
+{% endblock %}

@@ -1,0 +1,83 @@
+{% load static %}
+
+
+<!--start footer -->
+      <footer class="footer-a dark-deep">
+        <div class="footer-fist-row pt40">
+           <div class="container">
+              <div class="row footer-deg2">
+                 <div class="col-5s">
+                    <div class="footer-ree-c">
+                       <div class="footer-logo pt40">
+                          <a href="#"> <img src="{% static 'images\nexel_images\nexel_logo_top.png' %}" alt="reeven" class="img-fluid"> </a>
+                       </div>
+                       <p class="mt15">Overall client rating is 4.9 </p>
+                       <ul class="footer_social mt30">
+                          <li><a href="#" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                          <li> <a href="https://chat.whatsapp.com/Il3D2w5CiyVJzaLJhvici6" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                          <li><a href="https://youtube.com/@nexelin" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                          <li><a href="https://www.linkedin.com/company/nexel-futureize-the-innovation/" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                          <li> <a href="https://instagram.com/nexel.in" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a> </li>
+                       </ul>
+                       <a href="#" class="ree-btn  ree-btn-grdt1 mw-80 no-shadows mt40">Our Brochure <i class="fas fa-arrow-right fa-btn"></i></a> 
+                    </div>
+                 </div>
+                 <div class="col-5s">
+                    <h5>For Work inquiry</h5>
+                    <ul class="footer-links-list social-linkz">
+                       <li><a href="tel:+911234567890"><span><i class="fas fa-phone-square-alt"></i></span> +91 9778165158 </a></li>
+                       <li><a href="https://wa.me/+919778165158"><span><i class="fab fa-whatsapp-square"></i></span> +91 9778165158</a></li>
+                       <li><a href="mailto:contact@nexel.in"><span><i class="fas fa-envelope"></i></span> contact@nexel.in</a></li>
+                       <li><a href="mailto:nexel.cd@gmail.com"><span><i class="fas fa-envelope"></i></span> nexel.cd@gmail.com</a></li>
+                    </ul>
+                 </div>
+                 <div class="col-5s">
+                    <h5>Company</h5>
+                    <ul class="footer-links-list">
+                       <li><a href="{% url 'aboutus' %}"> About us</a></li>
+                       <li><a href="{% url 'service_page' %}">Services</a></li>
+                       <li><a href="{% url 'team' %}">Our Team</a></li>
+                       <li><a href="{% url 'allblogs' %}">Blog</a></li>
+                       <li><a href="{% url 'career' %}">Career</a></li>
+                       <li><a href="{% url 'contactus' %}">Contact Us</a></li>
+                    </ul>
+                 </div>
+                 <div class="col-5s">
+                    <h5>Services</h5>
+                    <ul class="footer-links-list">
+                       <li><a href="{% url 'web_development' %}">Web Development</a></li>
+                       <li><a href="{% url 'app_development' %}">Mobile App Development</a></li>
+                       <li><a href="{% url 'marketing' %}">Digital Marketing</a></li>
+                       <li><a href="{% url 'marketing' %}">Search Engine Optimization</a></li>
+                       <li><a href="{% url 'marketing' %}">Pay-Per-Click</a></li>
+                       <li><a href="{% url 'marketing' %}">Social Media Marketing</a></li>
+                    </ul>
+                 </div>
+                 <div class="col-5s">
+                    <h5>Internship</h5>
+                    <ul class="footer-links-list">
+                     {% for internship in internship %}
+                     <li><a  href="{% url 'internships_details' internship.slug %}">{{internship.name}}</a></li>
+                     {% endfor %}
+                     <li><a  href="{% url 'allinternships' %}">More</a></li>
+                    </ul>
+                 </div>
+              </div>
+           </div>
+           <div class="container ft-cpy bt-top mt70">
+              <div class="row">
+                 <div class="col-lg-5">
+                    <div class="ft-copyright">
+                       <p>Terms and Conditions / <a href="{% url 'privacypolicy' %}">Privacy & Policy</a></p>
+                    </div>
+                 </div>
+                 <div class="col-lg-7">
+                    <div class="ft-copyright ft-r">
+                       <p>© 2023. All Rights Reserved By <a href="https://www.nexel.in/" target="blank">Nexel Futureize the Innovation</a></p>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </footer>
+     <!-- end footer -->

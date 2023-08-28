@@ -1,0 +1,117 @@
+{% extends 'main_light/base.html' %}
+{% load static %}
+{% block body %}
+
+{% block head %}
+
+	<title>Meet Our Team - Exceptional Talents Powering Nexel's Success</title>
+    <meta name="description" content="Discover the talented individuals that power Nexel's success. Meet our dedicated team of software developers, designers, and digital strategists who work collaboratively to bring your ideas to life. Learn about their expertise and commitment to delivering innovative solutions.">
+    <meta name="keywords" content="Software Development, Web Development, Android App Development, SEO Services, Digital Marketing, Branding Solutions, Mangalore Karnataka, India">
+    <meta name="location" content="Mangalore, Karnataka, India">
+    <meta name="author" content="Nexel-Futureize the Innovation">
+
+	<!-- Social Media Meta Tags -->
+	<meta property="og:title" content="Nexel: Innovative Software Development Company">
+	<meta property="og:description" content="Leading software development company in Mangalore, Karnataka, offering web development, Android apps, SEO, digital marketing, and branding solutions.">
+	<meta property="og:image" content="{{ads.image.url}}"> <!-- Add URL to your company logo or relevant image -->
+	<meta property="og:url" content="https://www.nexel.in/">
+	<meta name="twitter:card" content="summary_large_image">
+
+	<!--Twitter-card-->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Nexel - Futureize the innovation">
+	<meta name="twitter:description" content="Leading software development company in Mangalore, Karnataka, offering web development, Android apps, SEO, digital marketing, and branding solutions.">
+	<meta name="twitter:image" content="{{ads.image.url}}">
+	
+	<!-- Schema Markup for Local Business -->
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "LocalBusiness",
+			"name": "Nexel",
+			"description": "Leading software development company in Mangalore, Karnataka, specializing in web development, Android app development, SEO, digital marketing, and branding.",
+			"url": "https://www.nexel.in",
+			"logo": "{% static 'images/favicon.png' %}",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Mangalore",
+				"addressRegion": "Karnataka",
+				"postalCode": "570001",
+				"addressCountry": "India"
+			},
+			"contactPoint": {
+				"@type": "ContactPoint",
+				"telephone": "+91-9778165158",
+				"contactType": "customer service"
+			}
+		}
+	</script>
+
+{% endblock head %}
+
+
+
+      <!--page head-->
+      <div class="port-head-sec pt85 pb120 r-bg-x">
+        <div class="container">
+           <div class="row vcenter pt80">
+              <div class="col-lg-6">
+                 <div class="page-headings">
+                    <span class="sub-heading mb15" data-aos="fade-up" data-aos-delay="200"><i class="fas fa-users mr5"></i> Our Team</span>
+                    <h1 class="mb15" data-aos="fade-up" data-aos-delay="400">Teamwork is the ability to work together toward a common vision</h1>
+                    <p class="h-light" data-aos="fade-up" data-aos-delay="600">Meet the driving force behind our digital dreams – a diverse team united by innovation and fueled by collaboration.</p>
+                    <a href="{% url 'contactus' %}" class="port-links mt40" data-aos="fade-up" data-aos-delay="800">Join Our Team <i class="fas fa-arrow-right fa-btn"></i></a>						
+                 </div>
+              </div>
+              <div class="col-lg-6">
+                 <div class="sol-img m-mt30" data-aos="fade-in" data-aos-delay="400"><img src="{% static 'images\nexel_images\team\team_banner_nexel.png' %}" alt="our-staff" class="img-fluid"></div>
+              </div>
+           </div>
+        </div>
+     </div>
+       <!--page head end-->
+
+     <!--team members-->
+     <section class="r-bg-a sec-pad">
+       <div class="container">
+          <div class="row justify-content-center">
+             <div class="col-lg-7 text-center">
+                <div class="page-headings">
+                   <h2 class="mb15">Meet the  <span class="ree-text rt40">Team </span></h2>
+                   <p class="mt15">Behind every line of code is a story, and our team of passionate minds is here to script the future together.</p>
+                </div>
+             </div>
+          </div>
+          <div class="row justify-content-center our-team">
+
+            {% for teams in teams %}
+             <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                <div class="ree-media-crd">
+                   <div class="rpl-img team-img" data-background="{{teams.image.url}}">
+                      <div class="icons">
+                         <a href="#"><i class="fab fa-facebook-f"></i></a>
+                         <a href="#"><i class="fab fa-twitter"></i></a>
+                         <a href="#"><i class="fab fa-linkedin"></i></a>
+                         <a href="#"><i class="fab fa-instagram"></i></a>
+                         <a href="#"><i class="fab fa-dribbble"></i></a>
+                      </div>
+                   </div>
+                   <div class="rpl-contt pt20">
+                      <h4>{{teams.name}}</h4>
+                      <p>{{teams.des}}</p>                       
+                   </div>
+                </div>
+             </div>
+             {% endfor %}
+
+
+          </div>
+       </div>         				
+    </section>
+    <!---team members end-->
+
+
+
+
+
+{% endblock %}

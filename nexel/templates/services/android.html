@@ -1,0 +1,283 @@
+{% extends 'main_light/base.html' %}
+{% load static %}
+{% block body %}
+
+
+
+      <!--start Hero Section  -->
+      <section class="home-app hero-sec r-bg-x">
+        <div class="container">
+           <div class="row">
+              <div class="col-lg-6 vcenter">
+                 <div class="hero-content-a">
+                    <div class="shape-dot-bg"><img src="{% static 'images/nexel_images/shape/svg_dot.svg' %}" alt="shape"></div>
+                    <h1 class="mb30 zup" data-aos="fade-in" data-aos-delay="200">Top Mobile App Development Company in India</h1>
+                    <p class="zup" data-aos="fade-in" data-aos-delay="500">Ready to bring your ideas to life on Android devices? Look no further! At Nexel, we specialize in turning your app dreams into reality. Our team of skilled Android wizards is here to craft apps that are user-friendly, engaging, and simply fun to use. Whether you're aiming for business success or to entertain, we've got you covered. Get ready to dive into the exciting world of Android app development with Nexel!</p>
+                 
+                    <div class="btn-sets2 vcenter  mt20" data-aos="fade-in" data-aos-delay="1100">
+                       <a href="{% url 'contactus' %}" class="ree-btn  ree-btn-grdt1 mw-80 mr20 mt20">Talk to Our Expert <i class="fas fa-arrow-right fa-btn"></i></a>
+                    </div>
+                 </div>
+              </div>
+              <div class="col-lg-6 vcenter">
+                 <div class="sol-image m-mt30">
+                    <img src="{% static 'images\nexel_images\services\app_development_services.png' %}" alt="Android development" class="img-fluid" data-aos="fade-in" data-aos-delay="400">
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+     <!--hero Section End-->
+
+
+           <!--start services-->
+           <section class="r-bg-i sec-pad">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-12">
+                     <div class="sec-heading text-center">
+                        <span class="sub-heading mb15">Nexel Services</span>					
+                        <h2>We build modern <span class="ree-text rt40">creative</span> <span class="ree-text rt40">mobile</span> experiences.</h2>
+                     </div>
+                  </div>
+               </div>
+               <div class="row mt30">
+                  <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                     <div class="ree-card r-bg-c mt60">
+                        <div class="ree-card-img shadows"><img src="{% static 'images\nexel_images\icons\lifestyle.png' %}" alt="services"> </div>
+                        <div class="ree-card-content mt40">
+                           <h3 class="mb15"><a href="{% url 'Lifestyle_and_Convenience' %}"> Lifestyle and Convenience</a></h3>
+                           <p> Discover apps that simplify daily life, from shopping and travel to food delivery and more.</p>
+                        </div>
+                        <div class="ree-card-content-link">
+                           <a href="{% url 'Lifestyle_and_Convenience' %}" class="ree-card-link mt40">Read More <i class="fas fa-arrow-right fa-btn"></i> </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                     <div class="ree-card r-bg-c  mt60">
+                        <div class="ree-card-img"><img src="{% static 'images\nexel_images\icons\learning.png' %}" alt="services"> </div>
+                        <div class="ree-card-content mt40">
+                           <h3 class="mb15"><a href="{% url 'learning' %}">Learning and Information</a></h3>
+                           <p>Immerse yourself in the world of knowledge with education, news, and language learning apps.</p>
+                        </div>
+                        <div class="ree-card-content-link">
+                           <a href="{% url 'learning' %}" class="ree-card-link mt40">Read More <i class="fas fa-arrow-right fa-btn"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="500">
+                     <div class="ree-card r-bg-c  mt60">
+                        <div class="ree-card-img"><img src="{% static 'images/nexel_images/icons/cube.svg' %}" alt="services"> </div>
+                        <div class="ree-card-content mt40">
+                           <h3 class="mb15"><a href="{% url 'productivity' %}">Productivity and Tools</a></h3>
+                           <p>Boost your efficiency with productivity tools, utilities, and apps that aid in job searching.</p>
+                        </div>
+                        <div class="ree-card-content-link">
+                           <a href="{% url 'productivity' %}" class="ree-card-link mt40">Read More <i class="fas fa-arrow-right fa-btn"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="700">
+                     <div class="ree-card r-bg-c  mt60">
+                        <div class="ree-card-img"><img src="{% static 'images/nexel_images/icons/smartwatch.svg' %}" alt="services"> </div>
+                        <div class="ree-card-content mt40">
+                           <h3 class="mb15"><a href="{% url 'entertainment' %}">Entertainment and Media</a></h3>
+                           <p>Dive into a realm of social connections, entertainment, and gaming through our engaging apps.</p>
+                        </div>
+                        <div class="ree-card-content-link">
+                           <a href="{% url 'entertainment' %}" class="ree-card-link mt40">Read More <i class="fas fa-arrow-right fa-btn"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="900">
+                     <div class="ree-card r-bg-c  mt60">
+                        <div class="ree-card-img"><img src="{% static 'images/nexel_images/icons/ux-interface.svg' %}" alt="services"> </div>
+                        <div class="ree-card-content mt40">
+                           <h3 class="mb15"><a href="{% url 'pratical' %}">Practical Solutions</a></h3>
+                           <p>Experience health, booking, real estate, and transportation apps that provide practical solutions.</p>
+                        </div>
+                        <div class="ree-card-content-link">
+                           <a href="{% url 'pratical' %}" class="ree-card-link mt40">Read More <i class="fas fa-arrow-right fa-btn"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="1100">
+                     <div class="ree-card r-bg-c  mt60">
+                        <div class="ree-card-img"><img src="{% static 'images/nexel_images/icons/app-development.svg' %}" alt="services"> </div>
+                        <div class="ree-card-content mt40">
+                           <h3 class="mb15"><a href="{% url 'ee' %}">Enhanced Experiences</a></h3>
+                           <p>Elevate your moments with weather updates, communication tools, photography, and music apps.</p>
+                        </div>
+                        <div class="ree-card-content-link">
+                           <a href="{% url 'ee' %}" class="ree-card-link mt40">Read More <i class="fas fa-arrow-right fa-btn"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="cta-block-wide mt100">
+                  <div class="row justify-content-center text-center">
+                     <div class="col-lg-10 vcenter">
+                        <div class="cta-heading-wide-bt">
+                           <h3>Hire World-Class <span class="ree-text rt40">Developers</span></h3>
+                           <a href="{% url 'contactus' %}" class="ree-btn  ree-btn-grdt1 mw-80">Hire Now <i class="fas fa-arrow-right fa-btn"></i></a>				
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--services end-->
+
+     
+      <!--start blogs  -->
+      <section class="half-bg-ree sec-pad">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="sec-heading text-center">
+						<span class="sub-heading mb15">Latest from blog</span>
+						<h2 class="mb15"><span	class="ree-text rt40">Read</span> stories, tips, and our opinions on everything</h2>
+						<p>Get updated with the latest trends in technology and know how your business can benefit from	these technologies.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row mt30">
+            {% for blog in blog %}
+				<div class="col-lg-4 mt30"  data-aos="fade-up" data-aos-delay="200">
+					<div class="half-blog-card" >
+						<div class="half-blog-img"> <a href="{% url 'blogdetails' blog.slug %}"><img src="{{blog.image1.url}}" alt="blogs"	class="img-fluid"> </a> </div>
+						<div class="half-blog-content" style="height:300px;">
+							<div class="blog-quick-inf mb20"><span><i class="far fa-calendar-alt"></i> {{blog.date}}</span> <span><i class="fas fa-user"></i> {{blog.author}}</span> </div>
+							<h4 class="mb15"><a href="{% url 'blogdetails' blog.slug %}">{{blog.title}}</a></h4>
+							<p>{{blog.quote|slice:50}}..</p>							
+						</div>
+					</div>
+				</div>
+            {% endfor %}
+			</div>
+			</div>
+	</section>
+	<!--end blogs-->
+
+     
+    <!--start technologies-->
+    <section class="r-bg-x zup sec-pad">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="sec-heading text-center">
+                  <h2><span class="ree-text rt40">Technologies</span> we work with</h2>
+                  </div>
+              </div>
+          </div>
+          <div class="row justify-content-center mt30">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+              <div class="icon-with-title">
+                  <a href="javascript:void(0)">
+                      <div class="iwt-icon"> <img src="{% static 'images\nexel_images\tech_logo\apple.svg' %}" alt="Android"> </div>
+                      <div class="iwt-content">
+                          <p>iOS</p>
+                      </div>
+                  </a>
+              </div>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                  <div class="icon-with-title">
+                  <a href="javascript:void(0)">
+                      <div class="iwt-icon"> <img src="{% static 'images\nexel_images\tech_logo\android.svg' %}" alt="Android"> </div>
+                      <div class="iwt-content">
+                          <p>Android</p>
+                      </div>
+                  </a>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+              <div class="icon-with-title">
+                  <a href="javascript:void(0)">
+                      <div class="iwt-icon"> <img src="{% static 'images\nexel_images\tech_logo\flutterio-icon.svg' %}" alt="Flutter"> </div>
+                      <div class="iwt-content">
+                          <p>Flutter</p>
+                      </div>
+                  </a>
+              </div>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+              <div class="icon-with-title">
+                  <a href="javascript:void(0)">
+                      <div class="iwt-icon"> <img src="{% static 'images\nexel_images\tech_logo\django.png' %}" alt="Apple"> </div>
+                      <div class="iwt-content">
+                          <p>DJANGO</p>
+                      </div>
+                  </a>
+              </div>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+              <div class="icon-with-title">
+                  <a href="javascript:void(0)">
+                      <div class="iwt-icon"> <img src="{% static 'images\nexel_images\tech_logo\physics.svg' %}" alt="React Native"> </div>
+                      <div class="iwt-content">
+                          <p>React Native</p>
+                      </div>
+                  </a>
+              </div>
+              </div>
+      
+              <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+              <div class="icon-with-title">
+                  <a href="javascript:void(0)">
+                      <div class="iwt-icon"> <img src="{% static 'images\nexel_images\tech_logo\php.png' %}" alt="Apswiftple"> </div>
+                      <div class="iwt-content">
+                          <p>PHP</p>
+                      </div>
+                  </a>
+              </div>
+              </div>
+              
+              <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                  <div class="icon-with-title">
+                  <a href="javascript:void(0)">
+                      <div class="iwt-icon"> <img src="{% static 'images\nexel_images\tech_logo\java.svg' %}" alt="Java"> </div>
+                      <div class="iwt-content">
+                          <p>Java</p>
+                      </div>
+                  </a>
+                  </div>
+              </div>
+              
+              <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                  <div class="icon-with-title">
+                  <a href="javascript:void(0)">
+                      <div class="iwt-icon"> <img src="{% static 'images\nexel_images\tech_logo\python.png' %}" alt="python"> </div>
+                      <div class="iwt-content">
+                          <p>Python</p>
+                      </div>
+                  </a>
+                  </div>
+              </div>
+              
+              <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                  <div class="icon-with-title">
+                  <a href="javascript:void(0)">
+                      <div class="iwt-icon"> <img src="{% static 'images\nexel_images\tech_logo\figma.png' %}" alt="pwa"> </div>
+                      <div class="iwt-content">
+                          <p>Figma</p>
+                      </div>
+                  </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!--end technologies-->
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends 'main_light/base.html' %}
+{% load static %}
+{% block body %}
+
+	<!--start home-about  -->
+	<section class="home-about sec-pad pt50 r-bg-a">
+		<div class="container">
+			<div class="row mt100" style="justify-content:center;">
+				<div class="col-lg-6">
+					<div class="form-contact-hom m-mt60">
+						<div class="form-block bg-w">
+							<div class="form-head"><h3>Upload Your Project</h3></div>
+							<div class="form-body">
+								<form method="post" name="feedback-form">
+									{% csrf_token %}
+									<div class="fieldsets row">
+										<div class="col-md-6"><input type="text" placeholder="Full Name" name="name" required></div>
+										<div class="col-md-6"><input type="email" placeholder="Email Address" name="email" required></div>
+									</div>
+                                    <br>
+									<div class="fieldsets row">
+                                        <div class="col-md-6"><input type="url" placeholder="LinkedIn Profile Url" name="linkedinurl"></div>
+										<div class="col-md-6"><input type="url" placeholder="Offer Letter Post LinkedIn url " name="phone" required></div>
+									</div>
+                                    <br>
+                                    <div class="fieldsets row">
+										<div class="col-md-6"><input type="url" placeholder="Project video LinkedIn URL" name="College" required></div>
+										<div class="col-md-6"><input type="url" placeholder="Project video Youtube URL" name="haq" required></div>
+									</div>
+                                    <br>
+                                    <div class="fieldsets row">
+										<div class="col-md-6"><input type="url" placeholder="Project File Github URL" name="College" required></div>
+										<div class="col-md-6"><input type="url" placeholder="Project File Drive URL (optional)" name="haq" ></div>
+									</div>
+                                    <br>
+									<div class="fieldsets"><textarea placeholder="Message (Optional)" name="message" ></textarea></div>
+									 
+									<div class="fieldsets mt20"> <button type="submit" name="submit" class="ree-btn  ree-btn-grdt1 w-100">Submit Your Project  <i class="fas fa-arrow-right fa-btn"></i></button> </div>
+									<p class="trm"><i class="fas fa-lock"></i>We hate spam, and we respect your privacy.</p>
+									
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!--home-about end-->
+
+
+    {% endblock %}

@@ -1,0 +1,112 @@
+	{% load static %}
+    
+    <!--start footer -->
+	<footer class="footer-a">		
+		<div class="footer-fist-row pt40">
+			<div class="container">
+				<div class="footer-rowset">
+					<div class="col footer-head">
+						<h5>Contact info</h5>
+						<ul class="footer-links-list social-linkz">
+							<li><a href="tel:+919778165158"><span><i class="fas fa-phone-square-alt"></i></span> +91 9778165158 </a></li>
+							<li><a href="tel:+919778165158"><span><i class="fab fa-whatsapp-square"></i></span> +91 9778165158</a></li>
+							<li><a href="mailto:contact@nexel.in"><span><i class="fas fa-envelope"></i></span> contact@nexel.in</a></li>
+							<li><a href="mailto:nexel.cd@gmail.com"><span><i class="fas fa-envelope"></i></span> nexel.cd@gmail.com</a></li>
+						</ul>
+					</div>
+					<div class="col footer-head">
+						<h5>Follow Us</h5>
+						<ul class="footer-links-list social-linkz">
+							<li><a href="javascript:void(0)"><span><i class="fab fa-facebook-f"></i></span> Facebook</a>	</li>
+							<li><a href="javascript:void(0)"><span><i class="fab fa-twitter"></i></span> Twitter </a>	</li>
+							<li><a href="https://instagram.com/nexel.in"><span><i class="fab fa-instagram"></i></span> Instagram</a> </li>
+							<li><a href="https://chat.whatsapp.com/Il3D2w5CiyVJzaLJhvici6"><span><i class="fab fa-whatsapp"></i></span> Community</a></li>
+							<li><a href="https://www.linkedin.com/company/nexel-futureize-the-innovation/"><span><i class="fab fa-linkedin-in"></i></span> linkedin</a></li>
+							<li><a href="https://youtube.com/@nexelin"><span><i class="fab fa-youtube"></i></span> Youtube</a> </li>
+						</ul>
+					</div>
+					<div class="col footer-head">
+						<h5>Services</h5>
+						<ul class="footer-links-list">
+							<li><a href="{% url 'web_development' %}">Web Development</a></li>
+							<li><a href="{% url 'app_development' %}">Mobile App Development</a></li>
+							<li><a href="{% url 'marketing' %}">Digital Marketing</a></li>
+							<li><a href="javascript:void(0)">Search Engine Optimization</a></li>
+							<li><a href="javascript:void(0)">Pay-Per-Click</a></li>
+							<li><a href="javascript:void(0)">Social Media Marketing</a></li>
+						 </ul>
+					</div>
+					
+					<div class="col footer-head">
+						<h5>Company</h5>
+						<ul class="footer-links-list">
+							<li><a href="{% url 'aboutus' %}">About US</a></li>
+							<li><a href="{% url 'service_page' %}">Service</a></li>
+							<li><a href="{% url 'allblogs' %}">Blogs</a></li>
+							<li><a href="{% url 'team' %}">Our Team</a></li>
+							<li><a href="{% url 'career' %}">Career</a></li>
+							<li><a href="{% url 'contactus' %}">Contact US</a></li>
+						</ul>
+					</div>
+
+					<div class="col footer-head">
+						<h5>Internships</h5>
+						<ul class="footer-links-list">
+							{% for internship in internship %}
+							<li><a  href="{% url 'internships_details' internship.slug %}">{{internship.name}}</a></li>
+							{% endfor %}
+							<li><a  href="{% url 'allinternships' %}">More</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-abt mt70 pt40 pb40">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 vcenter">
+							<div class="footer-ree-lg">
+								<div class="footer-logo">
+									<a href="#"> <img src="{% static 'images\nexel_images\nexel_logo_top.png' %}" alt="reeven" class="img-fluid" width=250> </a>
+								</div>
+								<div class="star-rating-review mt30">
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+								</div>
+								<h6 class="mt10">Overall client rating is 4.9 </h6>
+							</div>
+						</div>
+						<div class="col-lg-6 vcenter">
+							{% comment %} <div class="ref-logo">
+								<a href="#"> <img src="images/brand-logo/app-futura.png" alt="Logo"> </a>
+								<a href="#"> <img src="images/brand-logo/clutch.png" alt="Logo"> </a>
+								<a href="#"> <img src="images/brand-logo/goodfirm.png" alt="Logo"> </a>
+								<a href="#"> <img src="images/brand-logo/itfirm.png" alt="Logo"> </a>
+							</div> {% endcomment %}
+						</div>
+						<div class="col-lg-3 vcenter ft-btn">
+							<a href="#" class="ree-btn  ree-btn-grdt1 mw-80 no-shadows">Our Brochure <i class="fas fa-arrow-right fa-btn"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container ft-cpy">
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="ft-copyright">
+							<p>We are tracking any intention of piracy.</p>
+						</div>
+					</div>
+
+					<div class="col-lg-7">
+						<div class="ft-copyright ft-r">
+							<p>© 2023. All Rights Reserved By <a href="https://www.nexel.in/" target="blank">Nexel Futureize the Innovation</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->

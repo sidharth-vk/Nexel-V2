@@ -1,0 +1,107 @@
+{% extends 'main_light/base.html' %}
+{% load static %}
+
+
+{% block head %}
+{% for blog in  blog %}
+	<title>{{blog.title}}</title>
+    <meta name="description" content="Stay up-to-date with the latest news and insights from NEXEL, a tech startup based in Mangalore. We provide web & android development services, digital marketing, promo videos, and a digital learning platform for university students. We also offer a University CRM solution named NEXEL CampusConnect">
+    <meta name="keywords" content="Software Development, Web Development, Android App Development, SEO Services, Digital Marketing, Branding Solutions, Mangalore Karnataka, India, Nexel-Blogs">
+    <meta name="location" content="Mangalore, Karnataka, India">
+    <meta name="author" content="Nexel-Futureize the Innovation">
+
+	<!-- Social Media Meta Tags -->
+	<meta property="og:title" content="{{blog.title}}">
+	<meta property="og:description" content="Leading software development company in Mangalore, Karnataka, offering web development, Android apps, SEO, digital marketing, and branding solutions.">
+	<meta property="og:image" content="{{blog.image1.url}}"> <!-- Add URL to your company logo or relevant image -->
+	<meta property="og:url" content="https://www.nexel.in/">
+	<meta name="twitter:card" content="summary_large_image">
+
+	<!--Twitter-card-->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="{{blog.title}}">
+	<meta name="twitter:description" content="Leading software development company in Mangalore, Karnataka, offering web development, Android apps, SEO, digital marketing, and branding solutions.">
+	<meta name="twitter:image" content="{{blog.image1.url}}">
+	
+	<!-- Schema Markup for Local Business -->
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "LocalBusiness",
+			"name": "Nexel",
+			"description": "Leading software development company in Mangalore, Karnataka, specializing in web development, Android app development, SEO, digital marketing, and branding.",
+			"url": "https://www.nexel.in",
+			"logo": "{% static 'images/favicon.png' %}",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Mangalore",
+				"addressRegion": "Karnataka",
+				"postalCode": "570001",
+				"addressCountry": "India"
+			},
+			"contactPoint": {
+				"@type": "ContactPoint",
+				"telephone": "+91-9778165158",
+				"contactType": "customer service"
+			}
+		}
+	</script>
+{% endfor %}
+{% endblock head %}
+
+
+
+{% block body %}
+{% for blog in  blog %}
+		<!--blog details-->
+		<div class="r-bg-a pt85 pb120">		
+			<div class="container w-992">
+				<div class="row pt80">
+					<div class="col-lg-12">
+						<div class="page-headings text-center">
+							<ul class="breadcrus mb20">
+								<li class="bread-non"><a href="{% url 'allblogs' %}">All Blog Posts</a></li>
+								<li>&nbsp;/&nbsp;</li>
+								<li class="bread-active"><a href="#">Marketing</a></li>
+							</ul>
+							<h1>{{blog.title}}</h1>
+						</div>
+					
+					</div>
+				</div>
+				</div>
+				</div>
+
+			<div class="r-bg-x pb120">		
+			 <div class="container w-992">
+				<div class="blog-details">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="sol-img mt60"><img src="{{blog.image1.url}}" alt="blog" style="width:962px;" class="img-fluid"> </div>
+							<div class="ree-blog-details">
+								<div class="info-bar">
+									<div class="info-b-left">{{blog.tags}}</div>
+									<div class="info-b-right">By <a href="#">{{blog.author}}</a> • <span>{{blog.date}}</span> </div>
+								</div>
+								<div style="text-align:justify;">
+								{{blog.content|safe}}
+								</div>
+								<div class="sol-img mt45 mb10"> <img src="{{blog.image2.url}}" style="width:962px;" alt="blog" class="img-fluid"> </div>
+								<p class="small text-center pb25"> {{blog.quote}}</p>
+
+								<div style="text-align:justify;">
+								{{blog.content2|safe}}
+								</div>
+							</div>
+
+							<div class="center-btn"> <a href="{% url 'allblogs' %}" class="ree-btn  ree-btn-grdt2 mr20">Back to Blogs <i class="fas fa-arrow-left fa-btn"></i></a> </div>
+
+						</div>
+					</div>
+					</div>
+					</div>
+				</div>
+				<!--blog details end-->
+
+				{% endfor %}
+{% endblock %}

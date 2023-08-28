@@ -1,0 +1,695 @@
+{% extends 'main_light/base.html' %}
+{% load static %}
+{% block body %}
+
+
+<!--start Hero Section  -->
+<section class="home-hero-a">
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-6 vcenter">
+            <div class="hero-content-a">
+            <h1 class="h1 mb30" data-aos="fade-in" data-aos-delay="200"><span class="ree-text rt60">Website</span> Design & Development</h1>
+            <p data-aos="fade-in" data-aos-delay="500">"In a world where everyone is online, businesses need to be there too. Having a website that works well and stays current with the latest tech is a must for showing up on the web. At Nexel, we make sure your online presence isn't just functional, but keeps up with the times."
+            </p>
+            <a href="{% url 'contactus' %}" class="ree-btn  ree-btn-grdt1 mt40 mw-80" data-aos="fade-in" data-aos-delay="800">Let's Talk <i class="fas fa-arrow-right fa-btn"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-6 vcenter">
+            <div class="sol-image m-mt30">
+            <img src="{% static 'images\nexel_images\services\web_development_service.png' %}" alt="web development" class="img-fluid" data-aos="fade-in" data-aos-delay="400">
+            </div>
+        </div>
+        </div>
+    </div>
+  </div>
+</section>
+<!--hero Section End-->
+
+<!--start services-->
+<section class="r-bg-i sec-pad">
+    <div class="container">
+        <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="sec-heading text-center pera-block">
+            <h2>See what we can <span class="ree-text rt40">do</span> for <span class="ree-text rt40">you</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+            </div>
+        </div>
+        </div>
+        <div class="row mt30">
+        <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="ree-card r-bg-c mt60" style="height: 330px">
+            <div class="ree-card-img shadows"><img src="{% static 'images/nexel_images/icons/mobile-app.svg' %}" alt="services"> </div>
+            <div class="ree-card-content mt40">
+                <h3 class="mb15"><a href="{% url 'Custom_Website_Development' %}"> Custom Website Development</a></h3>
+                <p>At Nexel, We offer websites that match your unique vision and business goals.</p>
+            </div>
+            <div class="ree-card-content-link">
+                <a href="{% url 'Custom_Website_Development' %}" class="ree-card-link mt40">Read More <i class="fas fa-arrow-right fa-btn"></i> </a>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="ree-card r-bg-c  mt60" style="height: 330px">
+            <div class="ree-card-img"><img src="{% static 'images/nexel_images/icons/website.svg' %}" alt="services"> </div>
+            <div class="ree-card-content mt40">
+                <h3 class="mb15"><a href="{% url 'e_commerce_solutions' %}">E-commerce Solutions</a></h3>
+                <p>At Nexel, We offer Powerful online stores designed to maximize your sales potential.</p>
+            </div>
+            <div class="ree-card-content-link">
+                <a href="{% url 'e_commerce_solutions' %}" class="ree-card-link mt40">Read More <i class="fas fa-arrow-right fa-btn"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="ree-card r-bg-c  mt60" style="height: 330px">
+            <div class="ree-card-img"><img src="{% static 'images/nexel_images/icons/buy-online.svg' %}" alt="services"> </div>
+            <div class="ree-card-content mt40">
+                <h3 class="mb15"><a href="{% url 'responsive_design' %}">Responsive Design</a></h3>
+                <p>At Nexel, We offer Websites that adapt flawlessly to any device, ensuring a smooth user experience.</p>
+            </div>
+            <div class="ree-card-content-link">
+                <a href="{% url 'responsive_design' %}" class="ree-card-link mt40">Read More <i class="fas fa-arrow-right fa-btn"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="700">
+            <div class="ree-card r-bg-c  mt60" style="height: 330px">
+            <div class="ree-card-img"><img src="{% static 'images/nexel_images/icons/communicate.svg' %}" alt="services"> </div>
+            <div class="ree-card-content mt40">
+                <h3 class="mb15"><a href="{% url 'uiux' %}">UI/UX Excellence</a></h3>
+                <p>Intuitive and visually appealing designs that keep your visitors coming back.</p>
+            </div>
+            <div class="ree-card-content-link">
+                <a href="{% url 'uiux' %}" class="ree-card-link mt40">Read More <i class="fas fa-arrow-right fa-btn"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="900">
+          <div class="ree-card r-bg-c  mt60" style="height: 330px">
+          <div class="ree-card-img"><img src="{% static 'images/nexel_images/icons/servers.svg' %}" alt="services"> </div>
+          <div class="ree-card-content mt40">
+              <h3 class="mb15"><a href="{% url 'web_app' %}">Web Application Innovation</a></h3>
+              <p>Cutting-edge web apps that streamline processes and engage users.</p>
+          </div>
+          <div class="ree-card-content-link">
+              <a href="{% url 'web_app' %}" class="ree-card-link mt40">Read More <i class="fas fa-arrow-right fa-btn"></i>
+              </a>
+          </div>
+          </div>
+      </div>
+      
+        <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="1100">
+            <div class="ree-card r-bg-c  mt60" style="height: 330px">
+            <div class="ree-card-img"><img src="{% static 'images/nexel_images/icons/design-tools.svg' %}" alt="services"> </div>
+            <div class="ree-card-content mt40">
+                <h3 class="mb15"><a href="{% url 'ongoing_optimization' %}">Ongoing Optimization</a></h3>
+                <p>Regular updates, security enhancements, and performance fine-tuning for sustained success.</p>
+            </div>
+            <div class="ree-card-content-link">
+                <a href="{% url 'ongoing_optimization' %}" class="ree-card-link mt40">Read More <i class="fas fa-arrow-right fa-btn"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+      </div>
+        <div class="cta-block-wide mt100">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-10 vcenter">
+            <div class="cta-heading-wide-bt">
+                <h3>Hire World-Class <span class="ree-text rt40">Developers</span></h3>
+                <a href="{% url 'contactus' %}" class="ree-btn  ree-btn-grdt1 mw-80">Hire Now <i class="fas fa-arrow-right fa-btn"></i></a>				
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+<!--services end--> 
+
+
+
+{% comment %} 
+<!--portfolio items-->
+<div class="sec-pad r-bg-a">	
+	<div class="container">
+
+		<div class="row">
+			<div class="col-lg-5">
+			   <h2 class="mr50 mb15">Quality is more important than quantity</h2>
+			   <p>Take a look of our latest work.</p>
+			   
+			</div>	
+			
+			<div class="col-lg-7 m-mt30">
+				<h4 class="mb15">Check our portfolio on other websites as well.</h4>
+				<div class="port-ref-link">
+					<a href="#"><img src="{% static 'images/nexel_images/icons/instagrams.svg' %}" alt="instagrams-logo"> <span>Instagram</span> </a>
+				</div>
+				<div class="port-ref-link">
+					<a href="#"><img src="{% static 'images\nexel_images\icons\LinkedIn.png' %}" alt="LinkedIn-logo"> <span>LinkedIn</span> </a>
+				</div>
+				<div class="port-ref-link">
+					<a href="#"><img src="{% static 'images\nexel_images\icons\YouTube.png' %}" style="height: 40px; width: 50px;" alt="Youtube-logo"> <span>Youtube</span> </a>
+				</div>
+				<div class="port-ref-link">
+					<a href="#"><img src="{% static 'images\nexel_images\icons\WhatsApp.svg' %}"  alt="WhatsApp-logo"> <span>WhatsApp</span>	</a>
+				</div>
+			 </div>
+
+
+		 </div>
+
+		<div class="row justify-content-center mt70">
+		<div class="col-lg-4 col-md-6  col-sm-6 mt30">
+			<div class="fwb-main-x fwb-a">
+				<div class="work-thumbnails">
+				   <a href="#"><img src="images/portfolio/portfolio-3.jpg" alt="portfolio Nexel" class="img-fluid"> </a>
+				</div>
+				<div class="work-details">
+				   <p class="mb10">UX, UI, Graphic Design</p>
+				   <h4><a href="#"> Creative and minimal clothing label design</a> </h4>
+				</div>
+			 </div>
+			 </div>
+
+			 <div class="col-lg-4 col-md-6  col-sm-6 mt30"> 
+			 <div class="fwb-main-x fwb-a">
+				<div class="work-thumbnails">
+				   <a href="#">	<img src="images/portfolio/portfolio-1.jpg" alt="portfolio Nexel" class="img-fluid"> </a>
+				</div>
+				<div class="work-details">
+				   <p class="mb10">UX, UI, Graphic Design</p>
+				   <h4><a href="#">Creative business card design service </a></h4>
+				</div>
+			 </div>
+			 </div>
+
+			 <div class="col-lg-4 col-md-6  col-sm-6 mt30"> 
+			 <div class="fwb-main-x fwb-a">
+				<div class="work-thumbnails">
+				   <a href="#">	<img src="images/portfolio/portfolio-2.jpg" alt="portfolio Nexel" class="img-fluid"> </a>
+				</div>
+				<div class="work-details">
+				   <p class="mb10">UX, UI, Graphic Design</p>
+				   <h4><a href="#"> Furniture ios app kit design development </a></h4>
+				</div>
+			 </div>
+			 </div>
+
+		</div>			 
+	</div>
+</div>
+<!--portfolio end--> {% endcomment %}
+
+
+    <!--start technologies-->
+    <section class="r-bg-x zup sec-pad">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="sec-heading text-center pera-block">
+                <h2><span class="ree-text rt40">Technologies</span> we work with</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-10 mt60">
+              <div class="tab-17 tabs-layout">
+                <ul class="nav nav-tabs justify-content-center" id="myTab3" role="tablist">
+
+                  <li class="nav-item ">
+                    <a class="nav-link active" id="tab2b" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Front End</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="tab3c" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Database </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="tab4c" data-toggle="tab" href="#tab4" role="tab"	aria-controls="tab4" aria-selected="false">CMS </a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent3">
+
+                  <div class="tab-pane fade active show" id="tab2" role="tabpanel" aria-labelledby="tab2b">
+                    <div class="tab-data-cont">
+                      <div class="row justify-content-center">
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                          <div class="icon-with-title">
+                            <a href="javascript:void(0)">
+                              <div class="iwt-icon"> <img src="{% static 'images/nexel_images/icons/angular.svg' %}"
+                                alt="Angular.JS"> </div>
+                              <div class="iwt-content">
+                                <p>Angular.JS</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                          <div class="icon-with-title">
+                            <a href="javascript:void(0)">
+                              <div class="iwt-icon"> <img src="{% static 'images/nexel_images/icons/physics.svg' %}"
+                                alt="React JS"> </div>
+                              <div class="iwt-content">
+                                <p>React JS</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                          <div class="icon-with-title">
+                            <a href="javascript:void(0)">
+                              <div class="iwt-icon"> <img src="{% static 'images/nexel_images/icons/Npm-logo.svg' %}"
+                                alt="Npm-logo"> </div>
+                              <div class="iwt-content">
+                                <p>Npm </p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                          <div class="icon-with-title">
+                            <a href="javascript:void(0)">
+                              <div class="iwt-icon"> <img src="{% static 'images/nexel_images/icons/typescript.svg' %}"
+                                alt="typescript"> </div>
+                              <div class="iwt-content">
+                                <p>Typescript</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                          <div class="icon-with-title">
+                            <a href="javascript:void(0)">
+                              <div class="iwt-icon"> <img src="{% static 'images/nexel_images/icons/html-5.svg' %}"
+                                alt="html-5"> </div>
+                              <div class="iwt-content">
+                                <p>HTML5</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                          <div class="icon-with-title">
+                            <a href="javascript:void(0)">
+                              <div class="iwt-icon"> <img src="{% static 'images/nexel_images/icons/vuejs.svg' %}"
+                                alt="vuejs"> </div>
+                              <div class="iwt-content">
+                                <p>Vue JS</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                          <div class="icon-with-title">
+                            <a href="javascript:void(0)">
+                              <div class="iwt-icon"> <img src="{% static 'images/nexel_images/icons/bootstrap.svg' %}"
+                                alt="bootstrap"> </div>
+                              <div class="iwt-content">
+                                <p>Bootstrap</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                          <div class="icon-with-title">
+                            <a href="javascript:void(0)">
+                              <div class="iwt-icon"> <img src="{% static 'images/nexel_images/icons/Node.js_logo.svg' %}"
+                                alt="Node.js_logo"> </div>
+                              <div class="iwt-content">
+                                <p>Node.JS</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3c">
+                    <div class="tab-data-cont">
+                      <div class="row justify-content-center">
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                          <div class="icon-with-title">
+                            <a href="javascript:void(0)">
+                              <div class="iwt-icon"> <img src="{% static 'images/nexel_images/icons/MariaDB.svg' %}"
+                                alt="MariaDB"> </div>
+                              <div class="iwt-content">
+                                <p>MariaDB</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                          <div class="icon-with-title">
+                            <a href="javascript:void(0)">
+                              <div class="iwt-icon"> <img src="{% static 'images/nexel_images/icons/mongodb-icon.svg' %}"
+                                alt="mongodb-icon"> </div>
+                              <div class="iwt-content">
+                                <p>MongoDB</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                          <div class="icon-with-title">
+                            <a href="javascript:void(0)">
+                              <div class="iwt-icon"> <img src="{% static 'images/nexel_images/icons/redis-official.svg' %}"
+                                alt="redis"> </div>
+                              <div class="iwt-content">
+                                <p>Redis</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                          <div class="icon-with-title">
+                            <a href="javascript:void(0)">
+                              <div class="iwt-icon"> <img src="{% static 'images/nexel_images/icons/mysql.svg' %}"
+                                alt="mysql-official"> </div>
+                              <div class="iwt-content">
+                                <p>MySQL</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                          <div class="icon-with-title">
+                            <a href="javascript:void(0)">
+                              <div class="iwt-icon"> <img src="{% static 'images/nexel_images/icons/postgresql-icon.svg' %}"
+                                alt="postgresql-icon"> </div>
+                              <div class="iwt-content">
+                                <p>PostgreSQL</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                          <div class="icon-with-title">
+                            <a href="javascript:void(0)">
+                              <div class="iwt-icon"> <img src="{% static 'images/nexel_images/icons/oracle.svg' %}"
+                                alt="oracle-logo"> </div>
+                              <div class="iwt-content">
+                                <p>Oracle</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                          <div class="icon-with-title">
+                            <a href="javascript:void(0)">
+                              <div class="iwt-icon"> <img src="{% static 'images/nexel_images/icons/sqlite.svg' %}"
+                                alt="sqlite"> </div>
+                              <div class="iwt-content">
+                                <p>Sqlite</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                          <div class="icon-with-title">
+                            <a href="javascript:void(0)">
+                              <div class="iwt-icon"> <img src="{% static 'images/nexel_images/icons/aws-rds.svg' %}"
+                                alt="aws-rds"> </div>
+                              <div class="iwt-content">
+                                <p>AWS-RDS</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                          <div class="icon-with-title">
+                            <a href="javascript:void(0)">
+                              <div class="iwt-icon"> <img src="{% static 'images/nexel_images/icons/microsoft-access.svg' %}"
+                                alt="microsoft-access"> </div>
+                              <div class="iwt-content">
+                                <p>Microsoft-Access</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4c">
+                    <div class="tab-data-cont">
+                      <div class="row justify-content-center">
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                          <div class="icon-with-title">
+                            <a href="javascript:void(0)">
+                              <div class="iwt-icon"> <img src="{% static 'images/nexel_images/icons/shopify.svg' %}"
+                                alt="shopify"> </div>
+                              <div class="iwt-content">
+                                <p>Shopify</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                          <div class="icon-with-title">
+                            <a href="javascript:void(0)">
+                              <div class="iwt-icon"> <img src="{% static 'images/nexel_images/icons/magento.svg' %}"
+                                alt="magento"> </div>
+                              <div class="iwt-content">
+                                <p>Magento</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                          <div class="icon-with-title">
+                            <a href="javascript:void(0)">
+                              <div class="iwt-icon"> <img src="{% static 'images/nexel_images/icons/wordpress.svg' %}"
+                                alt="wordpress"> </div>
+                              <div class="iwt-content">
+                                <p>Wordpress</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                          <div class="icon-with-title">
+                            <a href="javascript:void(0)">
+                              <div class="iwt-icon"> <img src="{% static 'images/nexel_images/icons/joomla.svg' %}"
+                                alt="joomla"> </div>
+                              <div class="iwt-content">
+                                <p>Joomla</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                          <div class="icon-with-title">
+                            <a href="javascript:void(0)">
+                              <div class="iwt-icon"> <img src="{% static 'images/nexel_images/icons/drupal.svg' %}"
+                                alt="drupal"> </div>
+                              <div class="iwt-content">
+                                <p>Drupal</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                          <div class="icon-with-title">
+                            <a href="javascript:void(0)">
+                              <div class="iwt-icon"> <img src="{% static 'images/nexel_images/icons/wix.svg' %}" alt="wix">
+                              </div>
+                              <div class="iwt-content">
+                                <p>Wix</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                          <div class="icon-with-title">
+                            <a href="javascript:void(0)">
+                              <div class="iwt-icon"> <img src="{% static 'images/nexel_images/icons/bigcommerce-icon.svg' %}"
+                                alt="bigcommerce-icon"> </div>
+                              <div class="iwt-content">
+                                <p>Big Commerce</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                          <div class="icon-with-title">
+                            <a href="javascript:void(0)">
+                              <div class="iwt-icon"> <img src="{% static 'images/nexel_images/icons/woo.svg' %}"
+                                alt="WooCommerce"> </div>
+                              <div class="iwt-content">
+                                <p>Woo Commerce</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--end technologies-->
+
+
+      <!--start blogs  -->
+<section class="half-bg-ree sec-pad">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="sec-heading text-center">
+                  <span class="sub-heading mb15">Latest from blog</span>
+                  <h2 class="mb15"><span	class="ree-text rt40">Read</span> stories, tips, and our opinions on everything</h2>
+                  <p>Get updated with the latest trends in technology and know how your business can benefit from	these technologies.</p>
+              </div>
+          </div>
+      </div>
+      <div class="row mt30">
+      {% for blog in blog %}
+          <div class="col-lg-4 mt30"  data-aos="fade-up" data-aos-delay="200">
+              <div class="half-blog-card" >
+                  <div class="half-blog-img"> <a href="{% url 'blogdetails' blog.slug %}"><img src="{{blog.image1.url}}" alt="blogs"	class="img-fluid"> </a> </div>
+                  <div class="half-blog-content" style="height:300px;">
+                      <div class="blog-quick-inf mb20"><span><i class="far fa-calendar-alt"></i> {{blog.date}}</span> <span><i class="fas fa-user"></i> {{blog.author}}</span> </div>
+                      <h4 class="mb15"><a href="{% url 'blogdetails' blog.slug %}">{{blog.title}}</a></h4>
+                      <p>{{blog.quote|slice:50}}..</p>							
+                  </div>
+              </div>
+          </div>
+      {% endfor %}
+      </div>
+      </div>
+</section>
+<!--end blogs-->
+
+{% comment %} 
+          <!--start home review-->
+    <section class="r-bg-c sec-pad">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="heading-review text-center">
+                <span class="sub-heading mb15">TESTIMONIALS</span>
+                <h2 class="mb50">Our <span class="ree-text rt40">clients</span> <span class="ree-text rt40">praise</span> us for our great results</h2>
+                <div class="home-review-slider owl-carousel mt30">
+                  <div class="review-slider">
+                    <h4 class="mb20">"Nexel build my startup business a great website that really helps current and	potential customers get a good feel for my company."</h4>
+                    <p>I am delighted with our new website. A1 service and design by Nexel. You can go with the Web Design Company, and I 100% recommend them to anyone. The perfect company to go to for your ideal website and digital marketing.</p>
+                    <div class="reviewers mt60">
+                      <div class="reviewers-img">	<img src="images/users/user4.jpg" alt="client"> <a href="https://www.youtube.com/watch?v=7e90gBu4pas?autoplay=1&amp;rel=0"	class="play-vid-review video-popup" data-toggle="tooltip" data-placement="top" title="Play Video Review"><i class="fas fa-play"></i></a> </div>
+                      <div class="reviewers-nam">
+                        <h4>Moana Happy</h4>
+                        <p>Jaipur, Rajasthan</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="review-slider">
+                    <h4 class="mb20">"Nexel build my startup business a great website that really helps current and potential customers get a good feel for my company."</h4>
+                    <p>I was facing multiple issues with my old website and that i discovered Nexel. they resolved all the problems in the website they also helped me with marketing. which has helped me to acquire more customers. Retention on the website has also increased.</p>
+                    <div class="reviewers mt60">
+                      <div class="reviewers-img">	<img src="images/users/user4.jpg" alt="client"> <a href="https://www.youtube.com/watch?v=7e90gBu4pas?autoplay=1&amp;rel=0"	class="play-vid-review video-popup" data-toggle="tooltip" data-placement="top" title="Play Video Review"><i class="fas fa-play"></i></a></div>
+                      <div class="reviewers-nam">
+                        <h4>Moana Happy</h4>
+                        <p>Jaipur, Rajasthan</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--end home review --> {% endcomment %}
+
+
+          <!--start contact block-->
+    <section class="home-contact pb120" data-background="images/others/office.jpg">
+        <div class="container">
+          <div class="row zup flx-end">
+            <div class="col-right-a">
+              <div class="sec-heading fourc-up-a">
+                <span class="sub-heading mb15">Inquiry</span>
+                <h2>Let’s Get in <span class="ree-text rt40">Touch</span></h2>
+              </div>
+              <div class="home-contact-block">
+                
+                <div class="contact-infos">
+                  <div class="c-infot"> <span>Sales Department</span> <a href="tel:+917829843942"><i class="fas fa-phone-alt"></i> +91 7829843942</a> </div>
+                  <div class="c-infot"> <span>HR Department</span> <a href="tel:+919778165158"><i class="fas fa-phone-alt"></i> +91 9778165158</a> </div>
+               </div>
+               <div class="contact-infos mt35">
+                  <div class="c-infot"> <span>Sales Department</span> <a href="mailto:nexel.cd@gmail.com"><i class="fas fa-envelope"></i> nexel.cd@gmail.com</a> </div>
+                  <div class="c-infot"> <span>Connect on LinkedIn</span> <a href="https://www.linkedin.com/company/nexel-futureize-the-innovation/"><i class="fab fa-linkedin"></i> Nexel</a> </div>
+               </div>
+              
+                
+              </div>
+            </div>
+            <div class="col-right-b">
+              <div class="form-contact-hom fourc-up-b">
+                <div class="form-block">
+                  <div class="form-head">
+                    <h3>Please fill in the form below.</h3>
+                  </div>
+                  <div class="form-body">
+                    <form method="post" name="feedback-form">
+                      {% csrf_token %}
+                        <div class="fieldsets row mt40">
+                         <div class="col-md-6">
+                          <input type="text" placeholder="Full Name" name="name" class="input-ree" required> 
+                         </div>
+                         <div class="col-md-6">
+                          <input type="email" required placeholder="Email Address" name="email" class="input-ree">
+                         </div>
+                        </div>
+                        <div class="fieldsets row">
+                         <div class="col-md-6">
+                          <input type="tel" required placeholder="Contact Number" name="phone" class="input-ree">
+                         </div>
+                         <div class="col-md-6">
+                          <select class="input-ree" required name="interest">
+                           <option value="Web Design">Web Design</option>
+                           <option value="Graphic Design">Graphic Design</option>
+                           <option value="App Development">App Development</option>
+                           <option value="E-commerce Development">E-commerce Development</option>
+                           <option value="Digital Marketing">Digital Marketing</option>
+                           <option value="Business Growth">Business Growth</option>
+                           <option value="Business Startup">Business Startup</option>
+                           <option value="Other">Other...</option>
+                          </select>
+                         </div>
+                        </div>
+                        <div class="fieldsets row">
+                         <div class="col-md-12">
+                          <input type="text" required placeholder="Subject" name="subject" class="input-ree"> 
+                         </div>
+                         
+                        </div>
+                        <div class="fieldsets">
+                         <textarea placeholder="Message" required name="message" class="input-ree"></textarea>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                         <input type="checkbox" required class="custom-control-input" id="customCheck" name="example1" checked="checked">
+                         <label class="custom-control-label label-f-form" for="customCheck">I agree to the <a href="javascript:void(0)">Terms &amp; Conditions</a> of Nexel.</label>
+                        </div>
+                        <div class="fieldsets mt20">
+                         <button type="submit" name="submit" class="ree-btn  ree-btn-grdt1 no-shadows">Send your inquiry <i class="fas fa-arrow-right fa-btn"></i></button>
+                        </div>
+                       </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--end contact block-->
+
+{% endblock %}

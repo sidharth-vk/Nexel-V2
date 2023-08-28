@@ -1,0 +1,306 @@
+{% extends 'main_light/base.html' %}
+{% load static %}
+
+{% block head %}
+	{% for internship in internship %}
+	<title>{{internship.name}} at Nexel | Software Internship Program</title>
+    <!-- Meta Description -->
+    <meta name="description" content="Join the {{internship.name}} at Nexel and gain valuable experience in software engineering. Learn from experts, work on real projects, and kickstart your tech career. Apply now!">
+    <!-- Meta Keywords (Note: Meta keywords are not as relevant for SEO as they used to be) -->
+    <meta name="keywords" content="{{internship.name}}, software internship, Nexel, technology career, coding experience, real-world projects">
+    
+	
+	<!-- Social Media Meta Tags -->
+	<meta property="og:title" content="{{internship.name}} at Nexel">
+	<meta property="og:description" content="Leading software development company in Mangalore, Karnataka, offering web development, Android apps, SEO, digital marketing, and branding solutions.">
+	<meta property="og:image" content="{{internship.image.url}}"> <!-- Add URL to your company logo or relevant image -->
+	<meta property="og:url" content="{% url 'internships_details' internship.slug %}">
+	<meta name="twitter:card" content="summary_large_image">
+
+	{% endfor %}
+
+{% endblock head %}
+
+{% block body %}
+{% for internship in internship %}
+ <!-- Header title -->
+ <section class="header-title head-opacity" data-background="images/banner/office.jpg">
+	<div class="container">
+	   <div class="row">
+		  <div class="col-lg-6">
+			 <h1 class="mb15">{{internship.name}} Internship</h1>
+			 <p class="h-light">{{internship.dis}}</p>
+		
+		  <div class="case-study-about mt30">
+
+			  <div class="csa-block">
+				  <h6>Type</h6>
+				  <p>{{internship.location}}</p>
+			  </div>
+
+			  <div class="csa-block">
+				  <h6>Technologies</h6>
+				  <p>{{internship.tech}}</p>
+			  </div>
+		  </div>
+		  <div class="btn-sets2 vcenter  " data-aos="fade-in" data-aos-delay="1100"> <a href="#applynow" class="ree-btn  ree-btn-grdt1 no-shadows mw-80 mr20 mt20">Apply Now <i class="fas fa-arrow-right fa-btn"></i></a> </div>
+
+	   </div>
+	</div>
+</div>
+ </section>
+ <!-- Header title end -->
+
+
+
+<!--project description-->
+<section class="sec-pad r-bg-x">	
+	<div class="container">
+		<div class="row">		
+			<div class="col-lg-8">
+				<div class="pera-block ml25">					
+					<h2>About Nexel</h2>
+					<p>At NEXEL, located in Mangalore, Karnataka, we specialize in Futureize Innovation
+                        and providing cutting-edge technology solutions for businesses and organizations.
+                        Our services include web and android development, digital marketing, promotional
+                        videos, CRM products</p>
+					<p>Our team of tech experts and entrepreneurs understands the importance of staying
+                        ahead of the curve in today's digital age. That's why we strive to provide the latest
+                        and greatest technology solutions to help our clients succeed.</p>								
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="sol-img m-mt30">
+					<img src="{{internship.img.url}}" alt="img" class="img-fluid">
+				</div>
+			</div>		
+		</div>
+	</div>	
+</section>		
+<!--project description end-->
+
+
+<!--project description-->
+<section class="sec-pad r-bg-a">	
+	<div class="container">
+		<div class="row">		
+			<div class="col-lg-12">
+				<div class="pera-block ml25">					
+					<h2>Maximizing Your NEXEL Internship Experience</h2>
+					<p>Get the most out of your NEXEL internship by following these key points, ensuring a rewarding and successful journey.</p>
+					<div class="row mt30">
+						<div class="col-lg-6 mt30">
+							<div class="numbers-feature">
+								<div class="number-f"><h2>1</h2></div>
+								<div class="feature-content-f">
+									<h4>Elevate Your Profile: Stand Out with NEXEL</h4>
+                                    <p>Enhance your professional presence by updating your LinkedIn profile with your accomplishments. Showcase your offer letter and internship completion certificate, and remember to tag NEXEL in your posts. Use hashtags like #NEXEL and #FutureizeInnovation to connect with the community.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6 mt30">
+							<div class="numbers-feature">
+								<div class="number-f"><h2>2</h2></div>
+								<div class="feature-content-f">
+									<h4>Uphold Academic Integrity: Respect Originality</h4>
+									<p> Prioritize authenticity in your work to maintain academic integrity and respect intellectual property rights. Avoid plagiarism and code copying, safeguarding your internship experience and future prospects.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6 mt30">
+							<div class="numbers-feature">
+								<div class="number-f"><h2>3</h2></div>
+								<div class="feature-content-f">
+									<h4>Exhibit Your Accomplishments: Share Your Success</h4>
+									<p>Highlight your achievements by sharing a video of a completed task on LinkedIn. Connect with the NEXEL community by tagging the organization and using hashtags such as #NEXEL and #FutureizeInnovation.</p>
+								</div>
+							</div>
+						</div>
+
+                        <div class="col-lg-6 mt30">
+							<div class="numbers-feature">
+								<div class="number-f"><h2>4</h2></div>
+								<div class="feature-content-f">
+									<h4>Unlock Opportunities: Leverage Your NEXEL Journey</h4>
+									<p>Open doors to new possibilities through your NEXEL internship experience. By optimizing your LinkedIn profile, respecting originality, and showcasing your achievements, you position yourself for future success and innovation.</p>
+								</div>
+							</div>
+						</div>
+
+						
+
+					</div>											
+				</div>
+			</div>			 		
+		</div>	
+	</div>	
+</section>		
+<!--project description end-->
+
+
+<!--our work flow-->
+<section class="r-bg-c  sec-pad">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-8">
+				<div class="page-headings text-center">
+					<h2 class="mb15"> Optimizing Your Project Presentation</h2>
+					<p>Elevate your project's impact by crafting a polished video, boosting credibility on LinkedIn, preparing for submission, and expanding your reach with strategic hashtags.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center mt30">
+			<div class="col-lg-3 col-md-4 col-sm-6 mt30">
+				<div class="process-content ree-card">
+					<span class="setps hst-1">01</span>
+					<div class="process-block">
+						<div class="process-icon">
+							<img src="{% static 'images/nexel_images/icons/computer.svg' %}" alt="service" class="icon70 mb20">
+						</div>
+						<h4>Video Showcase</h4>
+						<p>Create a polished video highlighting your project work. Spotlight your accomplishments and contributions for a compelling presentation. </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 mt30">
+				<div class="process-content ree-card">
+					<span class="setps hst-2">02</span>
+					<div class="process-block ">
+						<div class="process-icon">
+							<img src="{% static 'images/nexel_images/icons/prototype.svg' %}" alt="service" class="icon70 mb20">
+						</div>
+						<h4>LinkedIn Credibility</h4>
+						<p>Share your video on LinkedIn to authenticate your achievements within your professional network. Tag NEXEL to ensure their recognition. </p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-3 col-md-4 col-sm-6 mt30">
+				<div class="process-content ree-card">
+					<span class="setps hst-3">03</span>
+					<div class="process-block">
+						<div class="process-icon">
+							<img src="{% static 'images/nexel_images/icons/quality-check.svg' %}" alt="service" class="icon70 mb20">
+						</div>
+						<h4>Submission Ready</h4>
+						<p>Get ready for submission by organizing individual files for each project level.<br> Await the forthcoming submission form. </p>
+					</div>
+				</div>
+			</div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 mt30 ">
+				<div class="process-content ree-card">
+					<span class="setps hst-4">04</span>
+					<div class="process-block">
+						<div class="process-icon">
+							<img src="{% static 'images/nexel_images/icons/promotion.svg' %}" alt="service" class="icon70 mb20">
+						</div>
+						<h4>Hashtag Amplification</h4>
+						<p>Expand your reach with relevant hashtags such as #NEXEL #FutureizeInnovation. Adapt hashtags to fit your specific internship domain. </p>
+					</div>
+				</div>
+			</div>
+			
+
+			
+		</div>
+	</div>
+</section>
+<!--our work flow end-->
+
+
+	<!--start home-about  -->
+	<section class="home-about sec-pad pt50 r-bg-a" id="applynow">
+		<div class="container">
+			<div class="row mt100">
+				<div class="col-lg-6">
+					<div class="about-content-home m-mb60 pera-block">
+						<span class="sub-heading mb15">We Are Nexel</span>
+						<h2><span class="ree-text rt40">Welcome to the NEXEL </span> {{internship.name}} Internship Adventure!</h2>
+						<p>Ready to dive into the exciting world of {{internship.name}}? You get to pick two out of the three available levels: Level 1, Level 2, or Level 3. These levels are like different paths on your internship journey, so you can choose what suits you best. With each level, you'll explore more and learn more about {{internship.name}}.</p>
+							
+							<p>Guess what? If you complete Level 3, there's an awesome bonus waiting for you. Not only will you have mastered {{internship.name}} skills, but you'll also boost your chances of getting a well-deserved stipend. It's a win-win situation: you get to learn, grow, and even earn while you're at it. Don't miss out on this incredible opportunity to explore the {{internship.name}} world and get rewarded for your efforts.</p>				
+						
+						<div class="btn-sets mt40">
+							<a href="{% url 'aboutus' %}" class="ree-btn  ree-btn-grdt2 mr20">About Us <i	class="fas fa-arrow-right fa-btn"></i></a>
+							{% comment %} <div class="vid-btntitl"><a href="https://www.youtube.com/watch?v=7e90gBu4pas?autoplay=1&amp;rel=0" class="ree-btn  ree-btn-grdt1 ree-btn-round video-popup"><i class="fas fa-play"></i></a>
+								<div class="vide-btntitl vcenter">	<p>Watch Video</p> </div>
+							</div> {% endcomment %}
+						</div>
+					</div>
+					</div>
+				
+				<div class="col-lg-6">
+					<div class="form-contact-hom m-mt60">
+						<div class="form-block bg-w">
+							<div class="form-head"><h3>Register for Your {{internship.name}} Journey!</h3></div>
+							<div class="form-body">
+								<form method="post" name="feedback-form">
+									{% csrf_token %}
+									<div class="fieldsets row">
+										<div class="col-md-6"><input type="text" placeholder="Full Name" name="name" required></div>
+										<div class="col-md-6"><input type="email" placeholder="Email Address" name="email" required></div>
+									</div>
+                                    <br>
+									<div class="fieldsets row">
+										<div class="col-md-6"><input type="phone" placeholder="Contact Number" name="phone" required></div>
+										<div class="col-md-6"><input type="text" placeholder="LinkedIn Profile Url" name="linkedinurl"></div>
+									</div>
+                                    <br>
+                                    <div class="fieldsets row">
+										<div class="col-md-6"><input type="text" placeholder="College" name="College" required></div>
+										<div class="col-md-6"><input type="text" placeholder="Highest Academic Qualification" name="haq" required></div>
+									</div>
+                                    <br>
+									<div class="fieldsets row">
+										
+										<div class="col-md-6"><input type="text" placeholder="Current Year(Education)" name="current_year" required></div>
+										<div class="col-md-6"><input type="text" placeholder="{{internship.name}} Internship" name="subject" disabled></div>
+									</div>
+                                    <br>
+									<div class="fieldsets"><textarea placeholder="Cover Letter" name="cover_letter" required></textarea></div>
+									 
+									<div class="fieldsets mt20"> <button type="submit" name="submit" class="ree-btn  ree-btn-grdt1 w-100">Send your inquiry <i class="fas fa-arrow-right fa-btn"></i></button> </div>
+									<p class="trm"><i class="fas fa-lock"></i>We hate spam, and we respect your privacy.</p>
+									
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!--home-about end-->
+
+
+<!--project description-->
+<section class="sec-pad r-bg-x">	
+	<div class="container">
+		<div class="row">		
+			<div class="col-lg-12">
+				<div class="pera-block ml25">					
+					<h2>Internship Completion Certificates</h2>
+					<p>Celebrate your achievement! Explore the collection of completion certificates awarded to interns who have successfully completed their journey with us. These certificates validate your dedication and contribution during your internship, showcasing your commitment to professional growth and learning.</p>										
+				</div>
+			</div>			 		
+		</div>	
+		<div class="row mt60">		
+			<div class="col-lg-12">
+				<div class="sol-image"><img src="{% static 'images\nexel_images\certificates\internship_certificate.png' %}" style="width:700px;" alt="banner" class="img-fluid"></div>
+	</div>	
+	</div>	
+	</div>	
+</section>		
+<!--project description end-->
+
+
+
+
+
+{% endfor %}
+
+{% endblock %}
